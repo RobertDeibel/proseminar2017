@@ -53,6 +53,7 @@
 %\RequirePackage{hyperref}
 \usepackage[utf8]{inputenc} %unicode support
 \usepackage[english]{babel}
+\usepackage{graphicx}
 %\usepackage[applemac]{inputenc} %applemac support if unicode package fails
 %\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
 
@@ -73,8 +74,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\def\includegraphic{}
-\def\includegraphics{}
+%\def\includegraphic{}
+%\def\includegraphics{}
 
 
 
@@ -224,10 +225,10 @@
 \section*{Introduction}
 \subsection*{Metagenomics}
 \paragraph*{A puddle of mud}
-The metagenome is the whole set of genes, of a population, of microorganisms as found in a sample of a microbiome. As such metagenomics is the study and analysis of such metagenomes.\cite{handelsman2004metagenomics}\\
-A microbiom is the "home" of countless bacteria, archea and viruses; like all microorganisms $>$90\% of those found in microbioms are uncultured, leaving researchers with the problem of how to study those organisms.
-\paragraph*{Accumulated data from microbiom samples}
-Choosing a sample is the easiest part of the analysis of a microbiom. the following steps are:\\
+The metagenome is the whole set of genes, of a population, of microorganisms as found in a sample of a microbiome. As such metagenomics is the study and analysis of these metagenomes.\cite{handelsman2004metagenomics}\\
+A microbiome is the "home" of countless bacteria, archea and viruses; like all microorganisms $>$90\% of those found in microbioms are uncultured, leaving researchers with the problem of how to study those organisms.
+\paragraph*{Accumulated data from microbiome samples}
+Choosing a sample is the easiest part of the analysis of a microbiome; the following steps are:\\
 \begin{enumerate}
 	\item DNA isolation from samples
 	\item construction of DNA libraries (typically in \textit{E. Coli} as host)
@@ -237,8 +238,16 @@ Choosing a sample is the easiest part of the analysis of a microbiom. the follow
 as stated in Streit et al \cite{STREIT2004492}, to obtain a metagenomic library, which is the base of analysis.\\
 \paragraph*{NGS -- Next Generation Sequencing}
 The sheer amount of data gathered through such samples -- Kakirde et al\cite{KAKIRDE20101911} states 10000 Gb of DNA in a soil sample -- leaves researches with the problem of sequencing.\\
-While Sanger sequencing is an accurate and proven method for sequencing it is dated for the scale of metagenomics. Nowadays new high throughput methods -- also Next Generation Sequencing or NGS for short -- are used to handle this problem.
+While Sanger sequencing is an accurate and proven method for sequencing it is dated for the scale of metagenomics. Nowadays new high throughput methods -- also Next Generation Sequencing or NGS for short -- are used to handle this problem. NGS is a conglomerate of methods used in bioinformatics  for rapid parallelized sequencing, producing thousands or millions of sequences concurrently.
 \paragraph*{What do we want to achieve?}
+Researches use the information gained through metagenomic-data analysis to design antibiotics and medicine or to analyze the metabolism of microorganisms and its hosts. Due to the rising number of identified genes using metagenomics-data analysis (Figure \ref{img:nov_gene_discov}) and the  $>$90\% uncultured microorganisms, metagenomics is a field of vast research.\\
+ I want to briefly summarize two approaches of data analysis and showcase one of those in more detail.
+\begin{figure}
+	\centering
+\includegraphics[width=.9\linewidth]{bilder/growth_of_novel_gene_discovery.jpg}	
+\caption{Timescale of metagenomic-derived and published DNA sequences. The timescale ranges from 1991, the initial outline of the major working steps, to the first mapping of archaeal comids in 2002 and the snap shot sequence analysis of the Sargasso Sea published earlier this year.--taken from Streit et al \cite{STREIT2004492}}
+\label{img:nov_gene_discov}
+\end{figure}
 
 \subsection*{The "classical" approach}
 \paragraph*{Alignment-based method}
@@ -329,17 +338,7 @@ The analysis of such metagenomes is heavy on computation and time resources, due
 %% Do not use \listoffigures as most will included as separate files
 
 \section*{Figures}
-  \begin{figure}[h!]
-  \caption{\csentence{Sample figure title.}
-      A short description of the figure content
-      should go here.}
-      \end{figure}
-
-\begin{figure}[h!]
-  \caption{\csentence{Sample figure title.}
-      Figure legend text.}
-      \end{figure}
-
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                               %%
 %% Tables                        %%
@@ -349,16 +348,6 @@ The analysis of such metagenomes is heavy on computation and time resources, due
 %% Use of \listoftables is discouraged.
 %%
 \section*{Tables}
-\begin{table}[h!]
-\caption{Sample table title. This is where the description of the table should go.}
-      \begin{tabular}{cccc}
-        \hline
-           & B1  &B2   & B3\\ \hline
-        A1 & 0.1 & 0.2 & 0.3\\
-        A2 & ... & ..  & .\\
-        A3 & ..  & .   & .\\ \hline
-      \end{tabular}
-\end{table}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                               %%
@@ -367,13 +356,8 @@ The analysis of such metagenomes is heavy on computation and time resources, due
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section*{Additional Files}
-  \subsection*{Additional file 1 --- Sample additional file title}
-    Additional file descriptions text (including details of how to
-    view the file, if it is in a non-standard format or the file extension).  This might
-    refer to a multi-page table or a figure.
 
   \subsection*{Additional file 2 --- Sample additional file title}
-    Additional file descriptions text.
 
 
 \end{backmatter}
