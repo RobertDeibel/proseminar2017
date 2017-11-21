@@ -222,16 +222,29 @@
 %%%%%%%%%%%%%%%%%%%%%%%%% start of article main body
 % <put your article body there>
 \section*{Introduction}
-\subsection*{The Metagenome}
+\subsection*{Metagenomics}
 \paragraph*{A puddle of mud}
-The metagenome is a set of genes, of a population, of microorganisms as found in a sample (e.g. from the gut of organisms, soil, water ). As such metagenomics is the study and analysis of such metagenomes.\cite{handelsman2004metagenomics} Typically the microorganisms found in these samples are uncultured; researchers are interested in cooperation of microorganisms, and microorganisms and microbiome. 
+The metagenome is the whole set of genes, of a population, of microorganisms as found in a sample of a microbiome. As such metagenomics is the study and analysis of such metagenomes.\cite{handelsman2004metagenomics}\\
+A microbiom is the "home" of countless bacteria, archea and viruses; like all microorganisms $>$90\% of those found in microbioms are uncultured, leaving researchers with the problem of how to study those organisms.
+\paragraph*{Accumulated data from microbiom samples}
+Choosing a sample is the easiest part of the analysis of a microbiom. the following steps are:\\
+\begin{enumerate}
+	\item DNA isolation from samples
+	\item construction of DNA libraries (typically in \textit{E. Coli} as host)
+	\item Mining for clones and DNA sequences of interest
+	\item Accumulation of desired clones and DNA sequences
+\end{enumerate}
+as stated in Streit et al \cite{STREIT2004492}, to obtain a metagenomic library, which is the base of analysis.\\
 \paragraph*{NGS -- Next Generation Sequencing}
-\paragraph*{Goals}
+The sheer amount of data gathered through such samples -- Kakirde et al\cite{KAKIRDE20101911} states 10000 Gb of DNA in a soil sample -- leaves researches with the problem of sequencing.\\
+While Sanger sequencing is an accurate and proven method for sequencing it is dated for the scale of metagenomics. Nowadays new high throughput methods -- also Next Generation Sequencing or NGS for short -- are used to handle this problem.
+\paragraph*{What do we want to achieve?}
+
 \subsection*{The "classical" approach}
 \paragraph*{Alignment-based method}
 \paragraph*{The good}
 \paragraph*{The bad -- Too much data, too little time}
-The analysis of such metagenomes is heavy on computation and time resources, due to the amount of data collected; this results in the pursuit of 
+The analysis of such metagenomes is heavy on computation and time resources, due to the amount of data collected; this results in the pursuit of faster and more effective methods for data analysis
 \subsection*{The alternative approach}
 \paragraph*{Alignment-free method}
 \paragraph*{The ugly}
@@ -248,54 +261,16 @@ The analysis of such metagenomes is heavy on computation and time resources, due
 \paragraph*{Weiss noch nicht hier}
 \section*{Results}
 \subsection*{Application of tools on data set}
-\paragraph*{title}
+\paragraph*{hier kommt was hin}
 
 %%%%%%%%%%%%%%%%
 %% Background %%
 %%
 \section*{Content}
-Text and results for this section, as per the individual journal's instructions for authors. %\cite{koon,oreg,khar,zvai,xjon,schn,pond,smith,marg,hunn,advi,koha,mouse}
-
 \section*{Section title}
-Text for this section \ldots
 \subsection*{Sub-heading for section}
-Text for this sub-heading \ldots
 \subsubsection*{Sub-sub heading for section}
-Text for this sub-sub-heading \ldots
 \paragraph*{Sub-sub-sub heading for section}
-Text for this sub-sub-sub-heading \ldots
-In this section we examine the growth rate of the mean of $Z_0$, $Z_1$ and $Z_2$. In
-addition, we examine a common modeling assumption and note the
-importance of considering the tails of the extinction time $T_x$ in
-studies of escape dynamics.
-We will first consider the expected resistant population at $vT_x$ for
-some $v>0$, (and temporarily assume $\alpha=0$)
-%
-\[
- E \bigl[Z_1(vT_x) \bigr]= E
-\biggl[\mu T_x\int_0^{v\wedge
-1}Z_0(uT_x)
-\exp \bigl(\lambda_1T_x(v-u) \bigr)\,du \biggr].
-\]
-%
-If we assume that sensitive cells follow a deterministic decay
-$Z_0(t)=xe^{\lambda_0 t}$ and approximate their extinction time as
-$T_x\approx-\frac{1}{\lambda_0}\log x$, then we can heuristically
-estimate the expected value as
-%
-\begin{eqnarray}\label{eqexpmuts}
-E\bigl[Z_1(vT_x)\bigr] &=& \frac{\mu}{r}\log x
-\int_0^{v\wedge1}x^{1-u}x^{({\lambda_1}/{r})(v-u)}\,du
-\nonumber\\
-&=& \frac{\mu}{r}x^{1-{\lambda_1}/{\lambda_0}v}\log x\int_0^{v\wedge
-1}x^{-u(1+{\lambda_1}/{r})}\,du
-\nonumber\\
-&=& \frac{\mu}{\lambda_1-\lambda_0}x^{1+{\lambda_1}/{r}v} \biggl(1-\exp \biggl[-(v\wedge1) \biggl(1+
-\frac{\lambda_1}{r}\biggr)\log x \biggr] \biggr).
-\end{eqnarray}
-%
-Thus we observe that this expected value is finite for all $v>0$ (also see ).
-%\nocite{oreg,schn,pond,smith,marg,hunn,advi,koha,mouse}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                          %%
@@ -306,13 +281,10 @@ Thus we observe that this expected value is finite for all $v>0$ (also see ).
 \begin{backmatter}
 
 \section*{Competing interests}
-  The authors declare that they have no competing interests.
 
 \section*{Author's contributions}
-    Text for this section \ldots
 
 \section*{Acknowledgements}
-  Text for this section \ldots
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                  The Bibliography                       %%
 %%                                                         %%

@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{1}
+\begin{thebibliography}{3}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -54,6 +54,36 @@
 \end{barticle}
 \endbibitem
 
+%%% 2
+\bibitem{STREIT2004492}
+\begin{barticle}
+\bauthor{\bsnm{Streit}, \binits{W.R.}},
+\bauthor{\bsnm{Schmitz}, \binits{R.A.}}:
+\batitle{Metagenomics – the key to the uncultured microbes}.
+\bjtitle{Current Opinion in Microbiology}
+\bvolume{7}(\bissue{5}),
+\bfpage{492}--\blpage{498}
+(\byear{2004}).
+doi:\doiurl{10.1016/j.mib.2004.08.002}
+\end{barticle}
+\endbibitem
+
+%%% 3
+\bibitem{KAKIRDE20101911}
+\begin{barticle}
+\bauthor{\bsnm{Kakirde}, \binits{K.S.}},
+\bauthor{\bsnm{Parsley}, \binits{L.C.}},
+\bauthor{\bsnm{Liles}, \binits{M.R.}}:
+\batitle{Size does matter: Application-driven approaches for soil
+  metagenomics}.
+\bjtitle{Soil Biology and Biochemistry}
+\bvolume{42}(\bissue{11}),
+\bfpage{1911}--\blpage{1923}
+(\byear{2010}).
+doi:\doiurl{10.1016/j.soilbio.2010.07.021}
+\end{barticle}
+\endbibitem
+
 \end{thebibliography}
 
 \newcommand{\BMCxmlcomment}[1]{}
@@ -75,6 +105,38 @@
   <issue>4</issue>
   <fpage>669</fpage>
   <lpage>-685</lpage>
+</bibl>
+
+<bibl id="B2">
+  <title><p>Metagenomics – the key to the uncultured microbes</p></title>
+  <aug>
+    <au><snm>Streit</snm><fnm>WR</fnm></au>
+    <au><snm>Schmitz</snm><fnm>RA</fnm></au>
+  </aug>
+  <source>Current Opinion in Microbiology</source>
+  <pubdate>2004</pubdate>
+  <volume>7</volume>
+  <issue>5</issue>
+  <fpage>492</fpage>
+  <lpage>498</lpage>
+  <url>http://www.sciencedirect.com/science/article/pii/S1369527404000967</url>
+</bibl>
+
+<bibl id="B3">
+  <title><p>Size does matter: Application-driven approaches for soil
+  metagenomics</p></title>
+  <aug>
+    <au><snm>Kakirde</snm><fnm>KS</fnm></au>
+    <au><snm>Parsley</snm><fnm>LC</fnm></au>
+    <au><snm>Liles</snm><fnm>MR</fnm></au>
+  </aug>
+  <source>Soil Biology and Biochemistry</source>
+  <pubdate>2010</pubdate>
+  <volume>42</volume>
+  <issue>11</issue>
+  <fpage>1911</fpage>
+  <lpage>1923</lpage>
+  <url>http://www.sciencedirect.com/science/article/pii/S0038071710002695</url>
 </bibl>
 
 </refgrp>
