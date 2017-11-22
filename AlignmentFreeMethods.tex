@@ -170,6 +170,8 @@
 \begin{abstractbox}
 
 \begin{abstract} % abstract
+	Metagenomics; as the study and analysis of microorganisms of biotopes, as the human gut, is a field of vast research where researchers have to deal with the giant sets of data gathered through NGS-methods. Since the amount of data results in stress on computation and time resources, the development of fast and light analysis tools is appreciated. In this report I want to introduce the two main branches of analysis tools, while setting the focus on alignment-free methods.\\
+	While the alignment-based approach are based on alignments -- as seen with Smith-Waterman or BLAST -- alignment-free methods, which are the main part of this report, have different approaches. Here I will showcase a selection of statistical and machine learning approaches and test these methods on a selected metagenomic data set.\\ 
 	 TODO
 \end{abstract}
 
@@ -241,20 +243,20 @@ The sheer amount of data gathered through such samples -- Kakirde et al\cite{KAK
 While Sanger sequencing is an accurate and proven method for sequencing it is dated for the scale of metagenomics. Nowadays new high throughput methods -- also Next Generation Sequencing or NGS for short -- are used to handle this problem. NGS is a conglomerate of methods used in bioinformatics  for rapid parallelized sequencing, producing thousands or millions of sequences concurrently.
 \paragraph*{What do we want to achieve?}
 Researches use the information gained through metagenomic-data analysis to design antibiotics and medicine or to analyze the metabolism of microorganisms and its hosts. Due to the rising number of identified genes using metagenomics-data analysis (Figure \ref{img:nov_gene_discov}) and the  $>$90\% uncultured microorganisms, metagenomics is a field of vast research.\\
- I want to briefly summarize two approaches of data analysis and showcase one of those in more detail.
+ I want to briefly summarize two approaches to data analysis and showcase one of those in more detail.
 \begin{figure}
 	\centering
 \includegraphics[width=.9\linewidth]{bilder/growth_of_novel_gene_discovery.jpg}	
 \caption{Timescale of metagenomic-derived and published DNA sequences. The timescale ranges from 1991, the initial outline of the major working steps, to the first mapping of archaeal comids in 2002 and the snap shot sequence analysis of the Sargasso Sea published earlier this year.--taken from Streit et al \cite{STREIT2004492}}
 \label{img:nov_gene_discov}
 \end{figure}
-
 \subsection*{The "classical" approach}
 \paragraph*{Alignment-based method}
+
 \paragraph*{The good}
 \paragraph*{The bad -- Too much data, too little time}
-The analysis of such metagenomes is heavy on computation and time resources, due to the amount of data collected; this results in the pursuit of faster and more effective methods for data analysis
-\subsection*{The alternative approach}
+Like mentioned before the analysis of metagenomes is heavy on computation and time resources, due to the amount of data collected; this results in the pursuit of faster and more effective methods for data analysis.
+\subsection*{The alternative}
 \paragraph*{Alignment-free method}
 \paragraph*{The ugly}
 \section*{Methods}

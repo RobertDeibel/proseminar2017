@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  21 NOV 2017 22:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  22 NOV 2017 11:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -523,21 +523,21 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <24> not available
 
 \address@aff1=\toks21
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 229.
+(Font)              <7> on input line 231.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 229.
+(Font)              <5> on input line 231.
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
 
-Overfull \hbox (4.43141pt too wide) in paragraph at lines 240--242
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+
+ []
+
+
+Overfull \hbox (4.43141pt too wide) in paragraph at lines 242--244
  \OT1/cmr/m/it/10 NGS -- Next Gen-er-a-tion Se-quenc-ing \OT1/cmr/m/n/10 The sh
 eer amount
  []
@@ -546,28 +546,26 @@ eer amount
 File: bilder/growth_of_novel_gene_discovery.jpg Graphic file (type jpg)
 <use bilder/growth_of_novel_gene_discovery.jpg>
 Package pdftex.def Info: bilder/growth_of_novel_gene_discovery.jpg  used on inp
-ut line 247. on input line 247.
+ut line 249. on input line 249.
 Package pdftex.def Info: Requested size: 211.49857pt x 151.79204pt on input lin
-e 247.
+e 249.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 255.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 259.
 
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./bilder/growth_of_novel_gene_discovery.jpg>]
+]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 292.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 294.
 
 
 (./AlignmentFreeMethods.bbl) 
 AED: lastpage setting LastPage
-[2
-
-] (./AlignmentFreeMethods.aux)
+[2 <./bilder/growth_of_novel_gene_discovery.jpg>] (./AlignmentFreeMethods.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -576,11 +574,11 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  3296 strings out of 492985
  42211 string characters out of 6138637
- 117853 words of memory out of 5000000
+ 118853 words of memory out of 5000000
  6822 multiletter control sequences out of 15000+600000
  7986 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,37p,447b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,9n,37p,523b,238s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/a
@@ -589,7 +587,7 @@ s17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti10.pfb>
-Output written on AlignmentFreeMethods.pdf (2 pages, 691876 bytes).
+Output written on AlignmentFreeMethods.pdf (2 pages, 693786 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream
