@@ -170,7 +170,7 @@
 \begin{abstractbox}
 
 \begin{abstract} % abstract
-	Metagenomics; as the study and analysis of microorganisms of biotopes, as the human gut, is a field of vast research where researchers have to deal with the giant sets of data gathered through NGS-methods. Since the amount of data results in stress on computation and time resources, the development of fast and light analysis tools is appreciated. In this report I want to introduce the two main branches of analysis tools, while setting the focus on alignment-free methods.\\
+	Metagenomics; as the study and analysis of microorganisms of biotopes, like the human gut, is a field of vast research where researchers have to deal with the giant sets of data gathered through NGS-methods. Since the amount of data results in stress on computation and time resources, the development of fast and light analysis tools is appreciated. In this report I want to introduce the two main branches of analysis tools, while setting the focus on alignment-free methods.\\
 	While the alignment-based approach are based on alignments -- as seen with Smith-Waterman or BLAST -- alignment-free methods, which are the main part of this report, have different approaches. Here I will showcase a selection of statistical and machine learning approaches and test these methods on a selected metagenomic data set.\\ 
 	 TODO
 \end{abstract}
@@ -227,23 +227,25 @@
 \section*{Introduction}
 \subsection*{Metagenomics}
 \paragraph*{A puddle of mud}
-The metagenome is the whole set of genes, of a population, of microorganisms as found in a sample of a microbiome. As such metagenomics is the study and analysis of these metagenomes.\cite{handelsman2004metagenomics}\\
+The metagenome is the whole set of genes of a population of microorganisms as found in a sample of a microbiome, the DNA of organisms, expected to have differing taxonomy, is isolated form these samples. As such metagenomics is the study and analysis of these metagenomes.\cite{handelsman2004metagenomics}\\
 A microbiome is the "home" of countless bacteria, archea and viruses; like all microorganisms $>$90\% of those found in microbioms are uncultured, leaving researchers with the problem of how to study those organisms.
-\paragraph*{Accumulated data from microbiome samples}
-Choosing a sample is the easiest part of the analysis of a microbiome; the following steps are:\\
-\begin{enumerate}
-	\item DNA isolation from samples
-	\item construction of DNA libraries (typically in \textit{E. Coli} as host)
-	\item Mining for clones and DNA sequences of interest
-	\item Accumulation of desired clones and DNA sequences
-\end{enumerate}
-as stated in Streit et al \cite{STREIT2004492}, to obtain a metagenomic library, which is the base of analysis.\\
+%\paragraph*{Accumulated data from microbiome samples}
+
+%Choosing a sample is the easiest part of the analysis of a microbiome; the following steps are:\\
+%\begin{enumerate}
+%	\item DNA isolation from samples
+%	\item construction of DNA libraries (typically in \textit{E. Coli} as host)
+%	\item Mining for clones and DNA sequences of interest
+%	\item Accumulation of desired clones and DNA sequences
+%\end{enumerate}
+%as stated in Streit et al \cite{STREIT2004492}, to obtain a metagenomic library, which is the base of analysis.\\
 \paragraph*{NGS -- Next Generation Sequencing}
 The sheer amount of data gathered through such samples -- Kakirde et al\cite{KAKIRDE20101911} states 10000 Gb of DNA in a soil sample -- leaves researches with the problem of sequencing.\\
-While Sanger sequencing is an accurate and proven method for sequencing it is dated for the scale of metagenomics. Nowadays new high throughput methods -- also Next Generation Sequencing or NGS for short -- are used to handle this problem. NGS is a conglomerate of methods used in bioinformatics  for rapid parallelized sequencing, producing thousands or millions of sequences concurrently.
+While Sanger sequencing is an accurate and proven method for sequencing it is dated for the scale of metagenomics. Nowadays new high throughput methods -- also Next Generation Sequencing or NGS for short -- are used to handle this problem. NGS is a conglomerate of methods used  for rapid parallelized sequencing, producing thousands or millions of sequences concurrently.\\
+ After converting the data into sequences through NGS methods of bioinformatics can be applied to analyze these.
 \paragraph*{What do we want to achieve?}
 Researches use the information gained through metagenomic-data analysis to design antibiotics and medicine or to analyze the metabolism of microorganisms and its hosts. Due to the rising number of identified genes using metagenomics-data analysis (Figure \ref{img:nov_gene_discov}) and the  $>$90\% uncultured microorganisms, metagenomics is a field of vast research.\\
- I want to briefly summarize two approaches to data analysis and showcase one of those in more detail.
+Following I want to briefly summarize two approaches to data analysis and showcase one of those in more detail.
 \begin{figure}
 	\centering
 \includegraphics[width=.9\linewidth]{bilder/growth_of_novel_gene_discovery.jpg}	
@@ -252,22 +254,33 @@ Researches use the information gained through metagenomic-data analysis to desig
 \end{figure}
 \subsection*{The "classical" approach}
 \paragraph*{Alignment-based method}
-
+The best known approach to analyze sequences, metagenomic or not, is the alignment-based method. While this approach may vary depending on implementation and tool used it is the same underlying idea.\\
+Gathered sequences are split into queries of substrings and aligned against a database of known and sequenced genomes while a scoring function is applied to weigh the  solution. These can then be analyzed and characterized depending on score, similarity, taxonomy and other factors.
 \paragraph*{The good}
+The here called classical approach is proven under various conditions and implemented numerous times. The accuracy of a BLAST-based analysis is well over 80\%\cite{doi:10.1142/9789814295291_0003}, while this seems as the perfect way to analyze our metagenomic-data -- even if BLAST is originally not designed for this purpose -- the drawbacks are visible under consideration of NGS.
 \paragraph*{The bad -- Too much data, too little time}
-NGS supplies researchers with a overabundance of novel data to be analyzed. This analysis of metagenomes is heavy on computation and time resources, due to the amount of data collected; this results in the pursuit of faster and more effective methods for data analysis. \\
-While alignment-based approaches are very accurate they can not be considered lightweight, they also rely on similar sequences already sequenced and listed in a database. So the demand of lightweight tools with fast computation and unorthodox approaches is high and rising.
+NGS supplies researchers with a overabundance of novel data to be analyzed. This analysis of metagenomes is heavy on computation and time resources, due to the amount of data collected. BLAST aligns its queries with the entries in a chosen database -- for 10000Gb of data one can safely assume this step as time consuming -- this results in the pursuit of faster and more effective methods for data analysis. So the demand of lightweight tools with fast computation and unorthodox approaches is high and rising.
 \subsection*{The alternative}
 \paragraph*{Alignment-free method}
+Apart from basing the analysis on alignment of sequences the other method would be to use alignment-free tools. While easily defined -- as a method of analyzing (metagenomic) data without the use of alignments -- the field itself is vast and filled with creative new approaches. For this report I reflect the work of Song et al \cite{doi:10.1093/bib/bbt067} and Laczny et al \cite{Laczny2014} both presenting methods for the analysis of metagenomic-data using alignment-free approaches. Basing their work on statistical methods and visualization respectively.
 \section*{Methods}
 \subsection*{Statistics}
 \paragraph*{The power of statistics}
+
 \subsection*{k-tupel approach -- Song et al}
 \paragraph*{D$_2$}
 \paragraph*{Nucleotide bias}
-\subsection*{Visualization approach}
+\subsection*{Visualization and machine learning}
 \paragraph*{The idea behind}
-\subsection*{non-linear dimension reduction -- Laczny et al}
+Another method relies on the Barnes-Hut-SNE\cite{DBLP:journals/corr/abs-1301-3342} approach on machine learning, where high-dimensional data can be visualized in time $\mathcal{O}(n \log n)$ using vantage-point trees and a variant of the Barnes-Hut algorithm exceeding the speed of the prior used t-SNE approach ($\mathcal{O}(n^2)$).\\
+Van der Maaten tried to optimize the t-SNE approach to machine learning through the idea that similar objects (in Euclidean space) have to be related to one another, thus different objects should be unrelated. On this assumption he based the BH SNE approach.
+\paragraph*{probabilities and distance}
+When using t-SNE, objects are described with points, a joint probability is assigned to the objects and a similarity function to the points. These can then be minimized using a Kullback-Leibler divergence. \cite{DBLP:journals/corr/abs-1301-3342} The computation of this algorithm is apparent as $\mathcal{O}(n^2)$, where $n$ is the number of objects. To lower this cost van der Maaten wanted to cut the computation of obvious not related objects, using a Barnes-Hut algorithm and metric trees.
+\paragraph*{vantage-point trees and Barnes-Hut }
+ The Barnes-Hut algorithm is often used by astronomers to perform $N$-body simulations.\cite{DBLP:journals/corr/abs-1301-3342} . In this algorithm it is assumed that the force of objects with sufficient distance to one another is infinitesimal and thus can be ignored in further computation. Leading --in the case of BH SNE -- to a cut in objects to include in calculations.\\
+ For choosing these Objects van der Maaten used vantage-point trees, where similar nodes are saved as the left, dissimilar nodes as the right child. After establishing the data structure one can search the tree and apply the given algorithm to the nodes of interest resulting in a decrease of runtime.\\
+ Originally this approach was intended for pattern recognition, but found a usage in bioinformatics.
+\subsection*{BH SNE for metagenomics-- Laczny et al}
 \paragraph*{Weiss noch nicht hier}
 \section*{Results}
 \subsection*{Application of tools on data set}

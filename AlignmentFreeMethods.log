@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  22 NOV 2017 11:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  22 NOV 2017 22:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -527,17 +527,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 231.
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
-
- []
-
-
-Overfull \hbox (4.43141pt too wide) in paragraph at lines 242--244
+Overfull \hbox (4.43141pt too wide) in paragraph at lines 243--246
  \OT1/cmr/m/it/10 NGS -- Next Gen-er-a-tion Se-quenc-ing \OT1/cmr/m/n/10 The sh
 eer amount
  []
@@ -546,39 +536,68 @@ eer amount
 File: bilder/growth_of_novel_gene_discovery.jpg Graphic file (type jpg)
 <use bilder/growth_of_novel_gene_discovery.jpg>
 Package pdftex.def Info: bilder/growth_of_novel_gene_discovery.jpg  used on inp
-ut line 249. on input line 249.
+ut line 251. on input line 251.
 Package pdftex.def Info: Requested size: 211.49857pt x 151.79204pt on input lin
-e 249.
+e 251.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 260.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 261.
 
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
+Overfull \hbox (2.01091pt too wide) in paragraph at lines 275--277
+ \OT1/cmr/m/it/10 The idea be-hind \OT1/cmr/m/n/10 An-other method re-lies on t
+he Barnes-
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 275--277
+\OT1/cmr/m/n/10 Hut-SNE[[]] ap-proach on ma-chine learn-ing, where
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 275--277
+\OT1/cmr/m/n/10 high-dimensional data can be vi-su-al-ized in time
+ []
+
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 293.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 306.
 
 
-(./AlignmentFreeMethods.bbl) 
+(./AlignmentFreeMethods.bbl [2 <./bilder/growth_of_novel_gene_discovery.jpg>]
+Overfull \hbox (0.72224pt too wide) in paragraph at lines 90--102
+\OT1/cmss/m/n/7 http://www.worldscientific.com/doi/pdf/10.1142/9789814295291[]0
+003. 
+ []
+
+
+Overfull \hbox (34.36629pt too wide) in paragraph at lines 106--122
+\OT1/cmss/m/n/7 /oup/backfile/content[]public/journal/bib/15/3/10.1093/bib/bbt0
+67/2/bbt067.pdf 
+ []
+
+) 
 AED: lastpage setting LastPage
-[2 <./bilder/growth_of_novel_gene_discovery.jpg>] (./AlignmentFreeMethods.aux)
+[3
+
+] (./AlignmentFreeMethods.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 3296 strings out of 492985
- 42211 string characters out of 6138637
- 118853 words of memory out of 5000000
- 6822 multiletter control sequences out of 15000+600000
+ 3309 strings out of 492985
+ 42422 string characters out of 6138637
+ 118869 words of memory out of 5000000
+ 6835 multiletter control sequences out of 15000+600000
  7986 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,37p,523b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,9n,37p,611b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/a
@@ -586,11 +605,12 @@ msfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 s17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmti10.pfb>
-Output written on AlignmentFreeMethods.pdf (2 pages, 692312 bytes).
+1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmti10.pfb>
+Output written on AlignmentFreeMethods.pdf (3 pages, 707469 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
