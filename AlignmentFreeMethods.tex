@@ -238,9 +238,9 @@ A microbiome is the "home" of countless bacteria, archea and viruses; like all m
 %	\item Mining for clones and DNA sequences of interest
 %	\item Accumulation of desired clones and DNA sequences
 %\end{enumerate}
-%as stated in Streit et al \cite{STREIT2004492}, to obtain a metagenomic library, which is the base of analysis.\\
+%as stated in Streit \textit{et al.} \cite{STREIT2004492}, to obtain a metagenomic library, which is the base of analysis.\\
 \paragraph*{NGS -- Next Generation Sequencing}
-The sheer amount of data gathered through such samples -- Kakirde et al\cite{KAKIRDE20101911} states 10000 Gb of DNA in a soil sample -- leaves researches with the problem of sequencing.\\
+The sheer amount of data gathered through such samples -- Kakirde \textit{et al.}\cite{KAKIRDE20101911} states 10000 Gb of DNA in a soil sample -- leaves researches with the problem of sequencing.\\
 While Sanger sequencing is an accurate and proven method for sequencing it is dated for the scale of metagenomics. Nowadays new high throughput methods -- also Next Generation Sequencing or NGS for short -- are used to handle this problem. NGS is a conglomerate of methods used  for rapid parallelized sequencing, producing thousands or millions of sequences concurrently.\\
  After converting the data into sequences through NGS methods of bioinformatics can be applied to analyze these.
 \paragraph*{What do we want to achieve?}
@@ -249,7 +249,7 @@ Following I want to briefly summarize two approaches to data analysis and showca
 \begin{figure}
 	\centering
 \includegraphics[width=.9\linewidth]{bilder/growth_of_novel_gene_discovery.jpg}	
-\caption{Timescale of metagenomic-derived and published DNA sequences. The timescale ranges from 1991, the initial outline of the major working steps, to the first mapping of archaeal comids in 2002 and the snap shot sequence analysis of the Sargasso Sea published earlier this year.--taken from Streit et al \cite{STREIT2004492}}
+\caption{Timescale of metagenomic-derived and published DNA sequences. The timescale ranges from 1991, the initial outline of the major working steps, to the first mapping of archaeal comids in 2002 and the snap shot sequence analysis of the Sargasso Sea published earlier this year.--taken from Streit \textit{et al.} \cite{STREIT2004492} just for comparison of published DNA sequences -- single events are not of importance for this}
 \label{img:nov_gene_discov}
 \end{figure}
 \subsection*{The "classical" approach}
@@ -259,15 +259,17 @@ Gathered sequences are split into queries of substrings and aligned against a da
 \paragraph*{The good}
 The here called classical approach is proven under various conditions and implemented numerous times. The accuracy of a BLAST-based analysis is well over 80\%\cite{doi:10.1142/9789814295291_0003}, while this seems as the perfect way to analyze our metagenomic-data -- even if BLAST is originally not designed for this purpose -- the drawbacks are visible under consideration of NGS.
 \paragraph*{The bad -- Too much data, too little time}
-NGS supplies researchers with a overabundance of novel data to be analyzed. This analysis of metagenomes is heavy on computation and time resources, due to the amount of data collected. BLAST aligns its queries with the entries in a chosen database -- for 10000Gb of data one can safely assume this step as time consuming -- this results in the pursuit of faster and more effective methods for data analysis. So the demand of lightweight tools with fast computation and unorthodox approaches is high and rising.
+NGS supplies researchers with a overabundance of novel data to be analyzed. This analysis of metagenomes is heavy on computation and time resources, due to the amount of data collected. BLAST aligns its queries with the entries in a chosen database -- for 10000Gb of data one can safely assume this step as time consuming -- this results in the pursuit of faster and more effective methods for data analysis. So the demand of lightweight tools with fast computation and unorthodox approaches is high and rising.\\
+\paragraph*{}
+Here I will showcase methods with differed approaches to the analysis of such data. 
 \subsection*{The alternative}
 \paragraph*{Alignment-free method}
-Apart from basing the analysis on alignment of sequences the other method would be to use alignment-free tools. While easily defined -- as a method of analyzing (metagenomic) data without the use of alignments -- the field itself is vast and filled with creative new approaches. For this report I reflect the work of Song et al \cite{doi:10.1093/bib/bbt067} and Laczny et al \cite{Laczny2014} both presenting methods for the analysis of metagenomic-data using alignment-free approaches. Basing their work on statistical methods and visualization respectively.
+Apart from basing the analysis on alignment of sequences the other method would be to use alignment-free tools. While easily defined -- as a method of analyzing (metagenomic) data without the use of alignments -- the field itself is vast and filled with creative new approaches. For this report I reflect the work of Song \textit{et al.} \cite{doi:10.1093/bib/bbt067} and Laczny \textit{et al.} \cite{Laczny2014} both presenting methods for the analysis of metagenomic-data using alignment-free approaches. Basing their work on statistical methods and visualization respectively.
 \section*{Methods}
 \subsection*{Statistics}
 \paragraph*{The power of statistics}
 
-\subsection*{k-tupel approach -- Song et al}
+\subsection*{k-tupel approach -- Song \textit{et al.}}
 \paragraph*{D$_2$}
 \paragraph*{Nucleotide bias}
 \subsection*{Visualization and machine learning}
@@ -280,8 +282,28 @@ When using t-SNE, objects are described with points, a joint probability is assi
  The Barnes-Hut algorithm is often used by astronomers to perform $N$-body simulations.\cite{DBLP:journals/corr/abs-1301-3342} . In this algorithm it is assumed that the force of objects with sufficient distance to one another is infinitesimal and thus can be ignored in further computation. Leading --in the case of BH SNE -- to a cut in objects to include in calculations.\\
  For choosing these Objects van der Maaten used vantage-point trees, where similar nodes are saved as the left, dissimilar nodes as the right child. After establishing the data structure one can search the tree and apply the given algorithm to the nodes of interest resulting in a decrease of runtime.\\
  Originally this approach was intended for pattern recognition, but found a usage in bioinformatics.
-\subsection*{BH SNE for metagenomics-- Laczny et al}
-\paragraph*{Weiss noch nicht}
+\subsection*{BH SNE for metagenomics -- Laczny \textit{et al.}}
+\paragraph*{signatures of genomic sequences}
+Observations suggest the existence of species-specific oligonucleotide signature in genomic sequences. \cite{Cheng1194}\cite{Laczny2014} These consist of k-mers and can be represented as vectors in Euclidean space; for human interpretation these vectors need to be transformed in a two or three dimensional space.\cite{Laczny2014} Laczny \textit{et al.} suggests that closely related data shall be represented as proximal to each other.
+\paragraph*{signatures and machine learning as the base}
+Using center log-ratio (CLR)-transformed -- a normalization step -- oligonucleotide signatures and the BH SNE approach of van der Maaten, Laczny \textit{et al.} construct a tool for application on metagenomic-data with sequence length of 1000 nt -- they state that 600 nt might be an appropriate length for some applications, but with lower values the separation would drop remarkably as seen in (Figure  \ref{img:seperation}) through greater separation of the clusters -- and 5-mers as oligonucleotide signatures, which produced better congruency compared to transformed and untransformed 4-mers.
+\begin{figure}
+	\centering
+	\includegraphics[width=.6\linewidth]{bilder/seperation.png}
+	\caption{BH-SNE-based visualization of genomic fragment signatures for
+		EqualSet01 (even community, overall reflecting distant taxonomic relatedness) with varying
+		fragment lengths.
+		(a) 800nt.  (b) 600nt.  (c) 400nt. -- from Laczny \textit{et al.}\cite{Laczny2014}}
+	\label{img:seperation}
+\end{figure}
+\paragraph*{finding of clusters}
+After applying their tool on simulated even and logarithmic distributed data -- sequences gathered from the real-world tend to be unevenly distributed, hence the logarithmic data set -- and closely related data, their results showed distinct clustering for different species as seen in Figure \ref{img:clusterData1}
+\begin{figure*}[h]
+	\centering
+	\includegraphics[width=.65\textwidth]{bilder/clusterData1.jpg}
+	\caption{Figure taken from Laczny \textit{et al.} \cite{Laczny2014} where red polygons mark clusters of congruent sets of interest used for calculation of sensitivity, specificity and accuracy. Colors mark different organisms as seen in the legend. The green polygon marks the cluster of 16s rRNA, forming a distinct group}
+	\label{img:clusterData1}
+\end{figure*}
 \section*{Results}
 \subsection*{Application of tools on data set}
 \paragraph*{hier kommt was hin}

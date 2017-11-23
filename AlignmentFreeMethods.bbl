@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{7}
+\begin{thebibliography}{8}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -149,6 +149,21 @@ CoRR
 \end{botherref}
 \endbibitem
 
+%%% 8
+\bibitem{Cheng1194}
+\begin{barticle}
+\bauthor{\bsnm{Cheng}, \binits{T.-Y.}},
+\bauthor{\bsnm{Sueoka}, \binits{N.}}:
+\batitle{Heterogeneity of dna in density and base composition}.
+\bjtitle{Science}
+\bvolume{141}(\bissue{3586}),
+\bfpage{1194}--\blpage{1196}
+(\byear{1963}).
+doi:\doiurl{10.1126/science.141.3586.1194}.
+\arxivurl{http://science.sciencemag.org/content/141/3586/1194.full.pdf}
+\end{barticle}
+\endbibitem
+
 \end{thebibliography}
 
 \newcommand{\BMCxmlcomment}[1]{}
@@ -266,6 +281,22 @@ CoRR
   <pubdate>2013</pubdate>
   <volume>abs/1301.3342</volume>
   <url>http://arxiv.org/abs/1301.3342</url>
+</bibl>
+
+<bibl id="B8">
+  <title><p>Heterogeneity of DNA in Density and Base Composition</p></title>
+  <aug>
+    <au><snm>Cheng</snm><fnm>TY</fnm></au>
+    <au><snm>Sueoka</snm><fnm>N</fnm></au>
+  </aug>
+  <source>Science</source>
+  <publisher>American Association for the Advancement of Science</publisher>
+  <pubdate>1963</pubdate>
+  <volume>141</volume>
+  <issue>3586</issue>
+  <fpage>1194</fpage>
+  <lpage>-1196</lpage>
+  <url>http://science.sciencemag.org/content/141/3586/1194</url>
 </bibl>
 
 </refgrp>
