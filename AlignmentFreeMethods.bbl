@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{8}
+\begin{thebibliography}{12}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -138,6 +138,22 @@ doi:\doiurl{10.1093/bib/bbt067}.
 \endbibitem
 
 %%% 7
+\bibitem{torney1990computation}
+\begin{bchapter}
+\bauthor{\bsnm{Torney}, \binits{D.C.}},
+\bauthor{\bsnm{Burks}, \binits{C.}},
+\bauthor{\bsnm{Davison}, \binits{D.}},
+\bauthor{\bsnm{Sirotkin}, \binits{K.M.}}:
+\bctitle{Computation of d2: a measure of sequence dissimilarity}.
+In: \bbtitle{Computers and DNA: the Proceedings of the Interface Between
+  Computation Science and Nucleic Acid Sequencing Workshop, Held December 12 to
+  16, 1988 in Santa Fe, New Mexico/edited by George I. Bell, Thomas G. Marr}
+(\byear{1990}).
+\bcomment{Redwood City, Calif.: Addison-Wesley Pub. Co., 1990.}
+\end{bchapter}
+\endbibitem
+
+%%% 8
 \bibitem{DBLP:journals/corr/abs-1301-3342}
 \begin{botherref}
 \oauthor{\bparticle{van~der} \bsnm{Maaten}, \binits{L.}}:
@@ -149,7 +165,7 @@ CoRR
 \end{botherref}
 \endbibitem
 
-%%% 8
+%%% 9
 \bibitem{Cheng1194}
 \begin{barticle}
 \bauthor{\bsnm{Cheng}, \binits{T.-Y.}},
@@ -161,6 +177,106 @@ CoRR
 (\byear{1963}).
 doi:\doiurl{10.1126/science.141.3586.1194}.
 \arxivurl{http://science.sciencemag.org/content/141/3586/1194.full.pdf}
+\end{barticle}
+\endbibitem
+
+%%% 10
+\bibitem{Wrighton1661}
+\begin{barticle}
+\bauthor{\bsnm{Wrighton}, \binits{K.C.}},
+\bauthor{\bsnm{Thomas}, \binits{B.C.}},
+\bauthor{\bsnm{Sharon}, \binits{I.}},
+\bauthor{\bsnm{Miller}, \binits{C.S.}},
+\bauthor{\bsnm{Castelle}, \binits{C.J.}},
+\bauthor{\bsnm{VerBerkmoes}, \binits{N.C.}},
+\bauthor{\bsnm{Wilkins}, \binits{M.J.}},
+\bauthor{\bsnm{Hettich}, \binits{R.L.}},
+\bauthor{\bsnm{Lipton}, \binits{M.S.}},
+\bauthor{\bsnm{Williams}, \binits{K.H.}},
+\bauthor{\bsnm{Long}, \binits{P.E.}},
+\bauthor{\bsnm{Banfield}, \binits{J.F.}}:
+\batitle{Fermentation, hydrogen, and sulfur metabolism in multiple uncultivated
+  bacterial phyla}.
+\bjtitle{Science}
+\bvolume{337}(\bissue{6102}),
+\bfpage{1661}--\blpage{1665}
+(\byear{2012}).
+doi:\doiurl{10.1126/science.1224041}.
+\arxivurl{http://science.sciencemag.org/content/337/6102/1661.full.pdf}
+\end{barticle}
+\endbibitem
+
+%%% 11
+\bibitem{Arumugam2011}
+\begin{barticle}
+\bauthor{\bsnm{Arumugam}, \binits{M.}},
+\bauthor{\bsnm{Raes}, \binits{J.}},
+\bauthor{\bsnm{Pelletier}, \binits{E.}},
+\bauthor{\bsnm{Le~Paslier}, \binits{D.}},
+\bauthor{\bsnm{Yamada}, \binits{T.}},
+\bauthor{\bsnm{Mende}, \binits{D.R.}},
+\bauthor{\bsnm{Fernandes}, \binits{G.R.}},
+\bauthor{\bsnm{Tap}, \binits{J.}},
+\bauthor{\bsnm{Bruls}, \binits{T.}},
+\bauthor{\bsnm{Batto}, \binits{J.-M.}},
+\bauthor{\bsnm{Bertalan}, \binits{M.}},
+\bauthor{\bsnm{Borruel}, \binits{N.}},
+\bauthor{\bsnm{Casellas}, \binits{F.}},
+\bauthor{\bsnm{Fernandez}, \binits{L.}},
+\bauthor{\bsnm{Gautier}, \binits{L.}},
+\bauthor{\bsnm{Hansen}, \binits{T.}},
+\bauthor{\bsnm{Hattori}, \binits{M.}},
+\bauthor{\bsnm{Hayashi}, \binits{T.}},
+\bauthor{\bsnm{Kleerebezem}, \binits{M.}},
+\bauthor{\bsnm{Kurokawa}, \binits{K.}},
+\bauthor{\bsnm{Leclerc}, \binits{M.}},
+\bauthor{\bsnm{Levenez}, \binits{F.}},
+\bauthor{\bsnm{Manichanh}, \binits{C.}},
+\bauthor{\bsnm{Nielsen}, \binits{H.B.}},
+\bauthor{\bsnm{Nielsen}, \binits{T.}},
+\bauthor{\bsnm{Pons}, \binits{N.}},
+\bauthor{\bsnm{Poulain}, \binits{J.}},
+\bauthor{\bsnm{Qin}, \binits{J.}},
+\bauthor{\bsnm{Sicheritz-Ponten}, \binits{T.}},
+\bauthor{\bsnm{Tims}, \binits{S.}},
+\bauthor{\bsnm{Torrents}, \binits{D.}},
+\bauthor{\bsnm{Ugarte}, \binits{E.}},
+\bauthor{\bsnm{Zoetendal}, \binits{E.G.}},
+\bauthor{\bsnm{Wang}, \binits{J.}},
+\bauthor{\bsnm{Guarner}, \binits{F.}},
+\bauthor{\bsnm{Pedersen}, \binits{O.}},
+\bauthor{\bparticle{de} \bsnm{Vos}, \binits{W.M.}},
+\bauthor{\bsnm{Brunak}, \binits{S.}},
+\bauthor{\bsnm{Dor{\'e}}, \binits{J.}},
+\bauthor{\bsnm{members)}, \binits{M.C.a.}},
+\bauthor{\bsnm{Weissenbach}, \binits{J.}},
+\bauthor{\bsnm{Ehrlich}, \binits{S.D.}},
+\bauthor{\bsnm{Bork}, \binits{P.}}:
+\batitle{Enterotypes of the human gut microbiome}.
+\bjtitle{Nature}
+\bvolume{473},
+\bfpage{174}
+(\byear{2011}).
+\bcomment{Article}
+\end{barticle}
+\endbibitem
+
+%%% 12
+\bibitem{Konstantinidis15082009}
+\begin{barticle}
+\bauthor{\bsnm{Konstantinidis}, \binits{K.T.}},
+\bauthor{\bsnm{Braff}, \binits{J.}},
+\bauthor{\bsnm{Karl}, \binits{D.M.}},
+\bauthor{\bsnm{DeLong}, \binits{E.F.}}:
+\batitle{Comparative metagenomic analysis of a microbial community residing at
+  a depth of 4,000 meters at station aloha in the north pacific subtropical
+  gyre}.
+\bjtitle{Applied and Environmental Microbiology}
+\bvolume{75}(\bissue{16}),
+\bfpage{5345}--\blpage{5355}
+(\byear{2009}).
+doi:\doiurl{10.1128/AEM.00473-09}.
+\arxivurl{http://aem.asm.org/content/75/16/5345.full.pdf+html}
 \end{barticle}
 \endbibitem
 
@@ -273,6 +389,21 @@ doi:\doiurl{10.1126/science.141.3586.1194}.
 </bibl>
 
 <bibl id="B7">
+  <title><p>Computation of d2: a measure of sequence dissimilarity</p></title>
+  <aug>
+    <au><snm>Torney</snm><fnm>DC</fnm></au>
+    <au><snm>Burks</snm><fnm>C</fnm></au>
+    <au><snm>Davison</snm><fnm>D</fnm></au>
+    <au><snm>Sirotkin</snm><fnm>KM</fnm></au>
+  </aug>
+  <source>Computers and DNA: the proceedings of the Interface between
+  Computation Science and Nucleic Acid Sequencing Workshop, held December 12 to
+  16, 1988 in Santa Fe, New Mexico/edited by George I. Bell, Thomas G.
+  Marr</source>
+  <pubdate>1990</pubdate>
+</bibl>
+
+<bibl id="B8">
   <title><p>Barnes-Hut-SNE</p></title>
   <aug>
     <au><snm>Maaten</snm><fnm>L</fnm></au>
@@ -283,7 +414,7 @@ doi:\doiurl{10.1126/science.141.3586.1194}.
   <url>http://arxiv.org/abs/1301.3342</url>
 </bibl>
 
-<bibl id="B8">
+<bibl id="B9">
   <title><p>Heterogeneity of DNA in Density and Base Composition</p></title>
   <aug>
     <au><snm>Cheng</snm><fnm>TY</fnm></au>
@@ -297,6 +428,109 @@ doi:\doiurl{10.1126/science.141.3586.1194}.
   <fpage>1194</fpage>
   <lpage>-1196</lpage>
   <url>http://science.sciencemag.org/content/141/3586/1194</url>
+</bibl>
+
+<bibl id="B10">
+  <title><p>Fermentation, Hydrogen, and Sulfur Metabolism in Multiple
+  Uncultivated Bacterial Phyla</p></title>
+  <aug>
+    <au><snm>Wrighton</snm><fnm>KC</fnm></au>
+    <au><snm>Thomas</snm><fnm>BC</fnm></au>
+    <au><snm>Sharon</snm><fnm>I</fnm></au>
+    <au><snm>Miller</snm><fnm>CS</fnm></au>
+    <au><snm>Castelle</snm><fnm>CJ</fnm></au>
+    <au><snm>VerBerkmoes</snm><fnm>NC</fnm></au>
+    <au><snm>Wilkins</snm><fnm>MJ</fnm></au>
+    <au><snm>Hettich</snm><fnm>RL</fnm></au>
+    <au><snm>Lipton</snm><fnm>MS</fnm></au>
+    <au><snm>Williams</snm><fnm>KH</fnm></au>
+    <au><snm>Long</snm><fnm>PE</fnm></au>
+    <au><snm>Banfield</snm><fnm>JF</fnm></au>
+  </aug>
+  <source>Science</source>
+  <publisher>American Association for the Advancement of Science</publisher>
+  <pubdate>2012</pubdate>
+  <volume>337</volume>
+  <issue>6102</issue>
+  <fpage>1661</fpage>
+  <lpage>-1665</lpage>
+  <url>http://science.sciencemag.org/content/337/6102/1661</url>
+</bibl>
+
+<bibl id="B11">
+  <title><p>Enterotypes of the human gut microbiome</p></title>
+  <aug>
+    <au><snm>Arumugam</snm><fnm>M</fnm></au>
+    <au><snm>Raes</snm><fnm>J</fnm></au>
+    <au><snm>Pelletier</snm><fnm>E</fnm></au>
+    <au><snm>Le Paslier</snm><fnm>D</fnm></au>
+    <au><snm>Yamada</snm><fnm>T</fnm></au>
+    <au><snm>Mende</snm><fnm>DR</fnm></au>
+    <au><snm>Fernandes</snm><fnm>GR</fnm></au>
+    <au><snm>Tap</snm><fnm>J</fnm></au>
+    <au><snm>Bruls</snm><fnm>T</fnm></au>
+    <au><snm>Batto</snm><fnm>JM</fnm></au>
+    <au><snm>Bertalan</snm><fnm>M</fnm></au>
+    <au><snm>Borruel</snm><fnm>N</fnm></au>
+    <au><snm>Casellas</snm><fnm>F</fnm></au>
+    <au><snm>Fernandez</snm><fnm>L</fnm></au>
+    <au><snm>Gautier</snm><fnm>L</fnm></au>
+    <au><snm>Hansen</snm><fnm>T</fnm></au>
+    <au><snm>Hattori</snm><fnm>M</fnm></au>
+    <au><snm>Hayashi</snm><fnm>T</fnm></au>
+    <au><snm>Kleerebezem</snm><fnm>M</fnm></au>
+    <au><snm>Kurokawa</snm><fnm>K</fnm></au>
+    <au><snm>Leclerc</snm><fnm>M</fnm></au>
+    <au><snm>Levenez</snm><fnm>F</fnm></au>
+    <au><snm>Manichanh</snm><fnm>C</fnm></au>
+    <au><snm>Nielsen</snm><fnm>HB</fnm></au>
+    <au><snm>Nielsen</snm><fnm>T</fnm></au>
+    <au><snm>Pons</snm><fnm>N</fnm></au>
+    <au><snm>Poulain</snm><fnm>J</fnm></au>
+    <au><snm>Qin</snm><fnm>J</fnm></au>
+    <au><snm>Sicheritz Ponten</snm><fnm>T</fnm></au>
+    <au><snm>Tims</snm><fnm>S</fnm></au>
+    <au><snm>Torrents</snm><fnm>D</fnm></au>
+    <au><snm>Ugarte</snm><fnm>E</fnm></au>
+    <au><snm>Zoetendal</snm><fnm>EG</fnm></au>
+    <au><snm>Wang</snm><fnm>J</fnm></au>
+    <au><snm>Guarner</snm><fnm>F</fnm></au>
+    <au><snm>Pedersen</snm><fnm>O</fnm></au>
+    <au><snm>Vos</snm><fnm>WM</fnm></au>
+    <au><snm>Brunak</snm><fnm>S</fnm></au>
+    <au><snm>Dor{\'e}</snm><fnm>J</fnm></au>
+    <au><snm>members)</snm><fnm>MCa</fnm></au>
+    <au><snm>Weissenbach</snm><fnm>J</fnm></au>
+    <au><snm>Ehrlich</snm><fnm>SD</fnm></au>
+    <au><snm>Bork</snm><fnm>P</fnm></au>
+  </aug>
+  <source>Nature</source>
+  <publisher>Nature Publishing Group, a division of Macmillan Publishers
+  Limited. All Rights Reserved. SN -</publisher>
+  <pubdate>2011</pubdate>
+  <volume>473</volume>
+  <fpage>174EP</fpage>
+  <url>http://dx.doi.org/10.1038/nature09944</url>
+  <note>Article</note>
+</bibl>
+
+<bibl id="B12">
+  <title><p>Comparative Metagenomic Analysis of a Microbial Community Residing
+  at a Depth of 4,000 Meters at Station ALOHA in the North Pacific Subtropical
+  Gyre</p></title>
+  <aug>
+    <au><snm>Konstantinidis</snm><fnm>KT</fnm></au>
+    <au><snm>Braff</snm><fnm>J</fnm></au>
+    <au><snm>Karl</snm><fnm>DM</fnm></au>
+    <au><snm>DeLong</snm><fnm>EF</fnm></au>
+  </aug>
+  <source>Applied and Environmental Microbiology</source>
+  <pubdate>2009</pubdate>
+  <volume>75</volume>
+  <issue>16</issue>
+  <fpage>5345</fpage>
+  <lpage>5355</lpage>
+  <url>http://aem.asm.org/content/75/16/5345.abstract</url>
 </bibl>
 
 </refgrp>

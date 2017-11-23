@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  23 NOV 2017 01:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  23 NOV 2017 13:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -424,35 +424,52 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 \Gin@req@height=\dimen106
 \Gin@req@width=\dimen107
 )
-(./AlignmentFreeMethods.aux)
+(/usr/share/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen108
+\extrarowheight=\dimen109
+\NC@list=\toks19
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+\TX@col@width=\dimen110
+\TX@old@table=\dimen111
+\TX@old@col=\dimen112
+\TX@target=\dimen113
+\TX@delta=\dimen114
+\TX@cols=\count92
+\TX@ftn=\toks20
+) (./AlignmentFreeMethods.aux)
 \openout1 = `AlignmentFreeMethods.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
-LaTeX Font Info:    ... okay on input line 88.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count92
-\scratchdimen=\dimen108
+\scratchcounter=\count93
+\scratchdimen=\dimen115
 \scratchbox=\box30
-\nofMPsegments=\count93
-\nofMParguments=\count94
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count95
-\MPscratchDim=\dimen109
-\MPnumerator=\count96
-\makeMPintoPDFobject=\count97
-\everyMPtoPDFconversion=\toks20
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen116
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks22
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -511,23 +528,23 @@ e
 ))
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 88.
+(lastpage)             ! on input line 89.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <13> not available
-(Font)              size <12> substituted on input line 94.
+(Font)              size <12> substituted on input line 95.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <24> not available
-(Font)              size <24.88> substituted on input line 102.
+(Font)              size <24.88> substituted on input line 103.
 
-\address@aff1=\toks21
+\address@aff1=\toks23
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 231.
+(Font)              <7> on input line 232.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 231.
+(Font)              <5> on input line 232.
 
-Overfull \hbox (4.43141pt too wide) in paragraph at lines 243--246
+Overfull \hbox (4.43141pt too wide) in paragraph at lines 244--247
  \OT1/cmr/m/it/10 NGS -- Next Gen-er-a-tion Se-quenc-ing \OT1/cmr/m/n/10 The sh
 eer amount
  []
@@ -536,110 +553,153 @@ eer amount
 File: bilder/growth_of_novel_gene_discovery.jpg Graphic file (type jpg)
 <use bilder/growth_of_novel_gene_discovery.jpg>
 Package pdftex.def Info: bilder/growth_of_novel_gene_discovery.jpg  used on inp
-ut line 251. on input line 251.
+ut line 252. on input line 252.
 Package pdftex.def Info: Requested size: 211.49857pt x 151.79204pt on input lin
-e 251.
+e 252.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 252.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 253.
 
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
 
-LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 272.
-
-
-
-Overfull \hbox (2.01091pt too wide) in paragraph at lines 277--279
+Overfull \hbox (2.01091pt too wide) in paragraph at lines 281--283
  \OT1/cmr/m/it/10 The idea be-hind \OT1/cmr/m/n/10 An-other method re-lies on t
 he Barnes-
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 277--279
+Underfull \hbox (badness 1024) in paragraph at lines 281--283
 \OT1/cmr/m/n/10 Hut-SNE[[]] ap-proach on ma-chine learn-ing, where
  []
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 277--279
+Underfull \hbox (badness 1755) in paragraph at lines 281--283
 \OT1/cmr/m/n/10 high-dimensional data can be vi-su-al-ized in time
  []
 
 [2 <./bilder/growth_of_novel_gene_discovery.jpg>]
-<bilder/seperation.png, id=21, 366.36874pt x 713.66624pt>
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 289.
+
+
+<bilder/seperation.png, id=24, 366.36874pt x 713.66624pt>
 File: bilder/seperation.png Graphic file (type png)
 <use bilder/seperation.png>
-Package pdftex.def Info: bilder/seperation.png  used on input line 292. on inpu
-t line 292.
+Package pdftex.def Info: bilder/seperation.png  used on input line 296. on inpu
+t line 296.
 Package pdftex.def Info: Requested size: 141.00143pt x 274.65889pt on input lin
-e 292.
-<bilder/clusterData1.jpg, id=23, 929.4725pt x 1010.77625pt>
+e 296.
+<bilder/clusterData1.jpg, id=26, 929.4725pt x 1010.77625pt>
 File: bilder/clusterData1.jpg Graphic file (type jpg)
 <use bilder/clusterData1.jpg>
-Package pdftex.def Info: bilder/clusterData1.jpg  used on input line 303. on in
-put line 303.
-Package pdftex.def Info: Requested size: 314.59705pt x 342.10164pt on input lin
-e 303.
+Package pdftex.def Info: bilder/clusterData1.jpg  used on input line 308. on in
+put line 308.
+Package pdftex.def Info: Requested size: 230.299pt x 250.44165pt on input line 
+308.
+
+Overfull \hbox (7.799pt too wide) in paragraph at lines 308--309
+ [][] 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 315.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 315.
+
+Overfull \hbox (5.30602pt too wide) in paragraph at lines 304--325
+\OT1/cmr/m/n/10 rith-mic data set -- and closely re-lated data (EqualSet02),
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 304--325
+\OT1/cmr/m/n/10 their re-sults showed dis-tinct clus-ter-ing for dif-fer-
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 304--325
+\OT1/cmr/m/n/10 sen-si-tiv-ity, speci-ficity and ac-cu-racy us-ing hu-man
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 326--329
+
+ []
+
+[3 <./bilder/seperation.png>]
+
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 328.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 354.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 (./AlignmentFreeMethods.bbl
-Overfull \hbox (0.72224pt too wide) in paragraph at lines 90--102
+Overfull \hbox (4.44104pt too wide) in paragraph at lines 90--102
 \OT1/cmss/m/n/7 http://www.worldscientific.com/doi/pdf/10.1142/9789814295291[]0
 003. 
  []
 
 
-Overfull \hbox (34.36629pt too wide) in paragraph at lines 106--122
+Overfull \hbox (2.47957pt too wide) in paragraph at lines 90--102
+\OT1/cmss/m/n/7 http://www.worldscientific.com/doi/abs/10.1142/9789814295291[]0
+003 
+ []
+
+
+Overfull \hbox (38.08508pt too wide) in paragraph at lines 106--122
 \OT1/cmss/m/n/7 /oup/backfile/content[]public/journal/bib/15/3/10.1093/bib/bbt0
 67/2/bbt067.pdf 
  []
 
-) 
+[4 <./bilder/clusterData1.jpg>]) 
 AED: lastpage setting LastPage
-[3 <./bilder/seperation.png>] [4 <./bilder/clusterData1.jpg>]
-(./AlignmentFreeMethods.aux)
+[5
+
+] (./AlignmentFreeMethods.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 3327 strings out of 492985
- 42768 string characters out of 6138637
- 118889 words of memory out of 5000000
- 6849 multiletter control sequences out of 15000+600000
- 8342 words of font info for 29 fonts, out of 8000000 for 9000
+ 3439 strings out of 492985
+ 44120 string characters out of 6138637
+ 125684 words of memory out of 5000000
+ 6950 multiletter control sequences out of 15000+600000
+ 9866 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,37p,641b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-s17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10
-.pfb>
-Output written on AlignmentFreeMethods.pdf (4 pages, 1241188 bytes).
+ 41i,9n,37p,641b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmti10.pfb>
+Output written on AlignmentFreeMethods.pdf (5 pages, 1279561 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

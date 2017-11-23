@@ -54,6 +54,7 @@
 \usepackage[utf8]{inputenc} %unicode support
 \usepackage[english]{babel}
 \usepackage{graphicx}
+\usepackage{tabularx}
 %\usepackage[applemac]{inputenc} %applemac support if unicode package fails
 %\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
 
@@ -267,26 +268,29 @@ Here I will showcase methods with differed approaches to the analysis of such da
 Apart from basing the analysis on alignment of sequences the other method would be to use alignment-free tools. While easily defined -- as a method of analyzing (metagenomic) data without the use of alignments -- the field itself is vast and filled with creative new approaches. For this report I reflect the work of Song \textit{et al.} \cite{doi:10.1093/bib/bbt067} and Laczny \textit{et al.} \cite{Laczny2014} both presenting methods for the analysis of metagenomic-data using alignment-free approaches. Basing their work on statistical methods and visualization respectively.
 \section*{Methods}
 \subsection*{Statistics}
-\paragraph*{The power of statistics}
-
-\subsection*{k-tupel approach -- Song \textit{et al.}}
-\paragraph*{D$_2$}
+\paragraph*{The idea behind}
+Sequence comparison is the go to for analysis of (meta)genomic data, normally alignment based methods like Smith-Waterman or BLAST are associated with this term; here I will report a methods discussed in Song \textit{et al.}\cite{doi:10.1093/bib/bbt067} using $k$-word counts as a statistical basis of analysis.\\
+By counting the occurrences of these $k$-words -- substrings of length $k$ -- applying a distance or dissimilarity metric based on the resulting $k$-word frequencies and clustered according to this metric and comparing the clusters with current biological knowledge. 
+\paragraph*{The $D_2$ statistic}
+Torney \textit{et al.}\cite{torney1990computation} introduced the $D_2$  using $k$-word matches between sequences to define the similarity of these.
+$$D_2=\sum_{w\in \mathcal{A}^k}X_wY_w$$
+where $X_w$ and $Y_w$ are the number of occurrences of $w$ in the corresponding sequence and $ \mathcal{A}$ is the alphabet.
 \paragraph*{Nucleotide bias}
 \subsection*{Visualization and machine learning}
 \paragraph*{The idea behind}
 Another method relies on the Barnes-Hut-SNE\cite{DBLP:journals/corr/abs-1301-3342} approach on machine learning, where high-dimensional data can be visualized in time $\mathcal{O}(n \log n)$ using vantage-point trees and a variant of the Barnes-Hut algorithm exceeding the speed of the prior used t-SNE approach ($\mathcal{O}(n^2)$).\\
-Van der Maaten tried to optimize the t-SNE approach to machine learning through the idea that similar objects (in Euclidean space) have to be related to one another, thus different objects should be unrelated. On this assumption he based the BH SNE approach.
+Van der Maaten tried to optimize the t-SNE approach to machine learning through the idea that similar objects (in Euclidean space) have to be related to one another, thus different objects should be unrelated. On this assumption he based the BH-SNE approach.
 \paragraph*{probabilities and distance}
 When using t-SNE, objects are described with points, a joint probability is assigned to the objects and a similarity function to the points. These can then be minimized using a Kullback-Leibler divergence. \cite{DBLP:journals/corr/abs-1301-3342} The computation of this algorithm is apparent as $\mathcal{O}(n^2)$, where $n$ is the number of objects. To lower this cost van der Maaten wanted to cut the computation of obvious not related objects, using a Barnes-Hut algorithm and metric trees.
 \paragraph*{vantage-point trees and Barnes-Hut }
- The Barnes-Hut algorithm is often used by astronomers to perform $N$-body simulations.\cite{DBLP:journals/corr/abs-1301-3342} . In this algorithm it is assumed that the force of objects with sufficient distance to one another is infinitesimal and thus can be ignored in further computation. Leading --in the case of BH SNE -- to a cut in objects to include in calculations.\\
+ The Barnes-Hut algorithm is often used by astronomers to perform $N$-body simulations.\cite{DBLP:journals/corr/abs-1301-3342} . In this algorithm it is assumed that the force of objects with sufficient distance to one another is infinitesimal and thus can be ignored in further computation. Leading --in the case of BH-SNE -- to a cut in objects to include in calculations.\\
  For choosing these Objects van der Maaten used vantage-point trees, where similar nodes are saved as the left, dissimilar nodes as the right child. After establishing the data structure one can search the tree and apply the given algorithm to the nodes of interest resulting in a decrease of runtime.\\
  Originally this approach was intended for pattern recognition, but found a usage in bioinformatics.
-\subsection*{BH SNE for metagenomics -- Laczny \textit{et al.}}
+\subsection*{BH-SNE for metagenomics -- Laczny \textit{et al.}}
 \paragraph*{signatures of genomic sequences}
 Observations suggest the existence of species-specific oligonucleotide signature in genomic sequences. \cite{Cheng1194}\cite{Laczny2014} These consist of k-mers and can be represented as vectors in Euclidean space; for human interpretation these vectors need to be transformed in a two or three dimensional space.\cite{Laczny2014} Laczny \textit{et al.} suggests that closely related data shall be represented as proximal to each other.
 \paragraph*{signatures and machine learning as the base}
-Using center log-ratio (CLR)-transformed -- a normalization step -- oligonucleotide signatures and the BH SNE approach of van der Maaten, Laczny \textit{et al.} construct a tool for application on metagenomic-data with sequence length of 1000 nt -- they state that 600 nt might be an appropriate length for some applications, but with lower values the separation would drop remarkably as seen in (Figure  \ref{img:seperation}) through greater separation of the clusters -- and 5-mers as oligonucleotide signatures, which produced better congruency compared to transformed and untransformed 4-mers.
+Using center log-ratio (CLR)-transformed -- a normalization step -- oligonucleotide signatures and the BH-SNE approach of van der Maaten, Laczny \textit{et al.} construct a tool for application on metagenomic-data with sequence length of 1000 nt -- they state that 600 nt might be an appropriate length for some applications, but with lower values the separation would drop remarkably as seen in (Figure  \ref{img:seperation}) through greater separation of the clusters -- and 5-mers as oligonucleotide signatures, which produced better congruency compared to transformed and untransformed 4-mers.
 \begin{figure}
 	\centering
 	\includegraphics[width=.6\linewidth]{bilder/seperation.png}
@@ -297,13 +301,35 @@ Using center log-ratio (CLR)-transformed -- a normalization step -- oligonucleot
 	\label{img:seperation}
 \end{figure}
 \paragraph*{finding of clusters}
-After applying their tool on simulated even and logarithmic distributed data -- sequences gathered from the real-world tend to be unevenly distributed, hence the logarithmic data set -- and closely related data, their results showed distinct clustering for different species as seen in Figure \ref{img:clusterData1}
-\begin{figure*}[h]
+After applying their tool on simulated even (EqualSet01) and logarithmic (LogSet01) distributed data -- sequences gathered from the real-world tend to be unevenly distributed, hence the logarithmic data set -- and closely related data (EqualSet02), their results showed distinct clustering for different species as seen in Figure \ref{img:clusterData1} for EqualSet01 and LogSet01 respectively. Clustering of EqualSet02 resulted in overlapping of closely related organisms and separation of distant relatives. \\
+Overall the runs on simulated data resulted in high sensitivity, specificity and accuracy using human polygonal selection -- as seen in figure \ref{img:clusterData1} by the red polygons -- and a similar output by fitting (semi-)automated Gaussian Mixture model to the data. A selection of values can be taken from table \ref{tab:sens-spec-acc1}.
+\begin{figure}
 	\centering
-	\includegraphics[width=.65\textwidth]{bilder/clusterData1.jpg}
+	\includegraphics[width=.98\linewidth]{bilder/clusterData1.jpg}
 	\caption{Figure taken from Laczny \textit{et al.} \cite{Laczny2014} where red polygons mark clusters of congruent sets of interest used for calculation of sensitivity, specificity and accuracy. Colors mark different organisms as seen in the legend. The green polygon marks the cluster of 16s rRNA, forming a distinct group}
 	\label{img:clusterData1}
-\end{figure*}
+\end{figure}
+\begin{table*}[h]
+	\centering
+	\caption{Sensitivity, specificity and accuracy of EqualSet01 -- excerpt from Laczny \textit{et al.}\cite{Laczny2014}}
+	\begin{tabular}{c|c|c|c|c}
+		Subset&Sensitivity (\%)&Specificity(\%)&Accuracy(\%)&Organism\\
+		\hline
+		01&90.06&99.99&99.94&B. \textit{amyloliquefaciens}\\
+		02&91.25&100&100&\textit{Candidatus} C. ruddii\\
+		03&95.42&99.90&97.57&Uncultured Termite group1 bacterium\\
+		04&98.60&98.23&96.67&E. \textit{coli}
+	\end{tabular}
+\label{tab:sens-spec-acc1}
+\end{table*}
+\paragraph*{application on real-world data sets}
+With great results on simulated data, Laczny \textit{et al.} also performed testing on real-world data taken from ground water\cite{Wrighton1661}, the human gut \cite{Arumugam2011} and the deep sea\cite{Konstantinidis15082009}. They reported similar clustering as seen in the simulated data with sensitivity, specificity and accuracy well above 90\% for all subsets of the human gut data except for one, where accuracy was slightly below 80\%.\\
+Analysis of ground water data had to be carried out differently, since they reported a lack of independently characterized reference genomes. Instead they used what they called "essential genes" which can indicate the completeness of a genome and reported for four out of eight with over 80\% percent completeness, indicating a positive result for their tool.\\ 
+As for the marine sample, the clusters identified by the tool were linked to uncharacterized data. The analysis of this data, while should be carried out, was beyond the scope of their work, so neither sensitivity, specificity nor accuracy were computed.\\
+\paragraph*{conclusions of Laczny \textit{et al.}}
+The work of Laczny \textit{et al.} introduces a new method for alignment-free data analysis which showed, compared to the state of the art ESOM-based approach, better clustering of metagenomic-data while also significantly reducing runtime from around 3.8-fold to 50.4-fold\cite{Laczny2014} and good visualization capabilities tested on simulated and real-world data.\\
+Clustering seems robust in the applied data sets, while similar data tends to be proximal to each other, 16 s rRNA sequences form an own distinct cluster, which could be due to the high conservation of these regions in the genome or missing species specific oligonucleotide signatures\\
+As a downside sequences of 1000 nt (or more) were needed to achieve good clustering, which are yet hard to gather through raw reads. Advances in sequencing technologies are needed to fully utilize the capabilities of this tool.
 \section*{Results}
 \subsection*{Application of tools on data set}
 \paragraph*{hier kommt was hin}
