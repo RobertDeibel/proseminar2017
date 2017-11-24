@@ -228,8 +228,8 @@
 \section*{Introduction}
 \subsection*{Metagenomics}
 \paragraph*{A puddle of mud}
-The metagenome is the whole set of genes of a population of microorganisms as found in a sample of a microbiome, the DNA of organisms, expected to have differing taxonomy, is isolated form these samples. As such metagenomics is the study and analysis of these metagenomes.\cite{handelsman2004metagenomics}\\
-A microbiome is the "home" of countless bacteria, archea and viruses; like all microorganisms $>$90\% of those found in microbioms are uncultured, leaving researchers with the problem of how to study those organisms.
+The metagenome is the whole set of genomes coding or noncoding of a population of microorganisms of a sample of a microbiome. The DNA of organisms is isolated form these samples. As such metagenomics is the study and analysis of these metagenomes\cite{handelsman2004metagenomics}.\\
+A microbiome consists of countless bacteria, archea and viruses; for which $>$90\% are uncultureable, using sequencing and metagenomic analysis to study these.
 %\paragraph*{Accumulated data from microbiome samples}
 
 %Choosing a sample is the easiest part of the analysis of a microbiome; the following steps are:\\
@@ -241,12 +241,12 @@ A microbiome is the "home" of countless bacteria, archea and viruses; like all m
 %\end{enumerate}
 %as stated in Streit \textit{et al.} \cite{STREIT2004492}, to obtain a metagenomic library, which is the base of analysis.\\
 \paragraph*{NGS -- Next Generation Sequencing}
-The sheer amount of data gathered through such samples -- Kakirde \textit{et al.}\cite{KAKIRDE20101911} states 10000 Gb of DNA in a soil sample -- leaves researches with the problem of sequencing.\\
-While Sanger sequencing is an accurate and proven method for sequencing it is dated for the scale of metagenomics. Nowadays new high throughput methods -- also Next Generation Sequencing or NGS for short -- are used to handle this problem. NGS is a conglomerate of methods used  for rapid parallelized sequencing, producing thousands or millions of sequences concurrently.\\
- After converting the data into sequences through NGS methods of bioinformatics can be applied to analyze these.
+The sheer amount of metagenomic data -- Kakirde \textit{et al.}\cite{KAKIRDE20101911} states 10 Tb of DNA in a soil sample -- resulted in advances of sequencing.\\
+Nowadays new high throughput methods -- also Next Generation Sequencing or NGS for short -- are used to handle this problem. NGS is a term for methods of rapid parallelized sequencing, producing thousands or millions of reads concurrently.\\
+ Data analysis can the be carried out on these reads.
 \paragraph*{What do we want to achieve?}
-Researches use the information gained through metagenomic-data analysis to design antibiotics and medicine or to analyze the metabolism of microorganisms and its hosts. Due to the rising number of identified genes using metagenomics-data analysis (Figure \ref{img:nov_gene_discov}) and the  $>$90\% uncultured microorganisms, metagenomics is a field of vast research.\\
-Following I want to briefly summarize two approaches to data analysis and showcase one of those in more detail.
+Metagenomics is used in the design of antibiotics and medicine or to analyze the metabolism of microorganisms and its hosts; making it a rapidly developing field of research.\\
+Here, I'm going to summarize two approaches to data analysis and showcase one of those in more detail.
 \begin{figure}
 	\centering
 \includegraphics[width=.9\linewidth]{bilder/growth_of_novel_gene_discovery.jpg}	
@@ -254,43 +254,36 @@ Following I want to briefly summarize two approaches to data analysis and showca
 \label{img:nov_gene_discov}
 \end{figure}
 \subsection*{The "classical" approach}
-\paragraph*{Alignment-based method}
-The best known approach to analyze sequences, metagenomic or not, is the alignment-based method. While this approach may vary depending on implementation and tool used it is the same underlying idea.\\
-Gathered sequences are split into queries of substrings and aligned against a database of known and sequenced genomes while a scoring function is applied to weigh the  solution. These can then be analyzed and characterized depending on score, similarity, taxonomy and other factors.
-\paragraph*{The good}
-The here called classical approach is proven under various conditions and implemented numerous times. The accuracy of a BLAST-based analysis is well over 80\%\cite{doi:10.1142/9789814295291_0003}, while this seems as the perfect way to analyze our metagenomic-data -- even if BLAST is originally not designed for this purpose -- the drawbacks are visible under consideration of NGS.
-\paragraph*{The bad -- Too much data, too little time}
-NGS supplies researchers with a overabundance of novel data to be analyzed. This analysis of metagenomes is heavy on computation and time resources, due to the amount of data collected. BLAST aligns its queries with the entries in a chosen database -- for 10000Gb of data one can safely assume this step as time consuming -- this results in the pursuit of faster and more effective methods for data analysis. So the demand of lightweight tools with fast computation and unorthodox approaches is high and rising.\\
+\paragraph*{Alignment-based methods are proven but don't include all possibilities}
+The best known approach to analyze reads are the various alignment-based methods.\\
+Sequences are aligned against a database of known genomes the resulting profiles are analyzed based on several factors.\\
+This approach is proven under various conditions and implemented numerous times; BLAST or example, while not used for metagenomics anymore, its accuracy is well over 80\%\cite{doi:10.1142/9789814295291_0003} and similar values are expected for other alignment-based tools.\\
+However NGS supplies researchers with a lot of data to be analyzed. The analysis of metagenomes is computation heavy. BLAST -- and therefor BLAST-like tools -- aligns its queries with the entries in a chosen database -- for 10Tb of data one can safely assume this step as time consuming -- this results in the pursuit of faster and more effective methods for data analysis.\\
+Research of  novel data, not listed in databases, is a main focus of metagenomics. This data stays unanalyzed following an alignment-based approach. \\
+Resulting in a high demand for a lightweight tool independent of databases.
 \paragraph*{}
 Here I will showcase methods with differed approaches to the analysis of such data. 
-\subsection*{The alternative}
-\paragraph*{Alignment-free method}
-Apart from basing the analysis on alignment of sequences the other method would be to use alignment-free tools. While easily defined -- as a method of analyzing (metagenomic) data without the use of alignments -- the field itself is vast and filled with creative new approaches. For this report I reflect the work of Song \textit{et al.} \cite{doi:10.1093/bib/bbt067} and Laczny \textit{et al.} \cite{Laczny2014} both presenting methods for the analysis of metagenomic-data using alignment-free approaches. Basing their work on statistical methods and visualization respectively.
+\subsection*{An alternative for alignment-based analysis}
+Apart from alignment of sequences another way is basing the analysis on different factors associated with metagenomic data. For this report I reflect the work of Song \textit{et al.} \cite{doi:10.1093/bib/bbt067} and Laczny \textit{et al.} \cite{Laczny2014} both presenting methods for the analysis of metagenomic-data using alignment-free approaches. Their work is based on statistical methods, and visualization and machine learning respectively.
 \section*{Methods}
 \subsection*{Statistics}
 \paragraph*{The idea behind}
-Sequence comparison is the go to for analysis of (meta)genomic data, normally alignment based methods like Smith-Waterman or BLAST are associated with this term; here I will report a methods discussed in Song \textit{et al.}\cite{doi:10.1093/bib/bbt067} using $k$-word counts as a statistical basis of analysis.\\
+hods like Smith-Waterman or BLAST are associated with this term; here I will report a methods discussed in Song \textit{et al.}\cite{doi:10.1093/bib/bbt067} using $k$-word counts as a statistical basis of analysis.\\
 By counting the occurrences of these $k$-words -- substrings of length $k$ -- applying a distance or dissimilarity metric based on the resulting $k$-word frequencies and clustered according to this metric and comparing the clusters with current biological knowledge. 
 \paragraph*{The $D_2$ statistic}
 Torney \textit{et al.}\cite{torney1990computation} introduced the $D_2$  using $k$-word matches between sequences to define the similarity of these.
 $$D_2=\sum_{w\in \mathcal{A}^k}X_wY_w$$
 where $X_w$ and $Y_w$ are the number of occurrences of $w$ in the corresponding sequence and $ \mathcal{A}$ is the alphabet.
 \paragraph*{Nucleotide bias}
-\subsection*{Visualization and machine learning}
-\paragraph*{The idea behind}
-Another method relies on the Barnes-Hut-SNE\cite{DBLP:journals/corr/abs-1301-3342} approach on machine learning, where high-dimensional data can be visualized in time $\mathcal{O}(n \log n)$ using vantage-point trees and a variant of the Barnes-Hut algorithm exceeding the speed of the prior used t-SNE approach ($\mathcal{O}(n^2)$).\\
-Van der Maaten tried to optimize the t-SNE approach to machine learning through the idea that similar objects (in Euclidean space) have to be related to one another, thus different objects should be unrelated. On this assumption he based the BH-SNE approach.
-\paragraph*{probabilities and distance}
-When using t-SNE, objects are described with points, a joint probability is assigned to the objects and a similarity function to the points. These can then be minimized using a Kullback-Leibler divergence. \cite{DBLP:journals/corr/abs-1301-3342} The computation of this algorithm is apparent as $\mathcal{O}(n^2)$, where $n$ is the number of objects. To lower this cost van der Maaten wanted to cut the computation of obvious not related objects, using a Barnes-Hut algorithm and metric trees.
-\paragraph*{vantage-point trees and Barnes-Hut }
- The Barnes-Hut algorithm is often used by astronomers to perform $N$-body simulations.\cite{DBLP:journals/corr/abs-1301-3342} . In this algorithm it is assumed that the force of objects with sufficient distance to one another is infinitesimal and thus can be ignored in further computation. Leading --in the case of BH-SNE -- to a cut in objects to include in calculations.\\
- For choosing these Objects van der Maaten used vantage-point trees, where similar nodes are saved as the left, dissimilar nodes as the right child. After establishing the data structure one can search the tree and apply the given algorithm to the nodes of interest resulting in a decrease of runtime.\\
- Originally this approach was intended for pattern recognition, but found a usage in bioinformatics.
-\subsection*{BH-SNE for metagenomics -- Laczny \textit{et al.}}
-\paragraph*{signatures of genomic sequences}
-Observations suggest the existence of species-specific oligonucleotide signature in genomic sequences. \cite{Cheng1194}\cite{Laczny2014} These consist of k-mers and can be represented as vectors in Euclidean space; for human interpretation these vectors need to be transformed in a two or three dimensional space.\cite{Laczny2014} Laczny \textit{et al.} suggests that closely related data shall be represented as proximal to each other.
-\paragraph*{signatures and machine learning as the base}
-Using center log-ratio (CLR)-transformed -- a normalization step -- oligonucleotide signatures and the BH-SNE approach of van der Maaten, Laczny \textit{et al.} construct a tool for application on metagenomic-data with sequence length of 1000 nt -- they state that 600 nt might be an appropriate length for some applications, but with lower values the separation would drop remarkably as seen in (Figure  \ref{img:seperation}) through greater separation of the clusters -- and 5-mers as oligonucleotide signatures, which produced better congruency compared to transformed and untransformed 4-mers.
+\subsection*{Machine learning for alignment-free data analysis}
+In his work van der Maaten\cite{DBLP:journals/corr/abs-1301-3342} introduced a machine learning variant -- BH-SNE --  based upon the idea that closely related objects have a larger influence upon each other than unrelated ones. While these objects were originally intended to be points in a picture, Laczny \textit{et al.}\cite{Laczny2014} used reads of metagenomes.\\
+\paragraph*{Barnes-Hut and vantage-point trees for faster computation}
+The Barnes-Hut algorithm is often used by astronomers to perform $N$-body simulations.\cite{DBLP:journals/corr/abs-1301-3342} . In this algorithm it is assumed that the force of objects with sufficient distance to one another is infinitesimal and thus can be ignored in further computation. Leading --in the case of BH-SNE -- to a cut in objects to include in calculations.\\
+For choosing these objects van der Maaten used vantage-point trees, where similar nodes are saved as the left, dissimilar nodes as the right child. After establishing the data structure one can search the tree and apply the given algorithm to the nodes of interest resulting in a decrease of runtime.\\
+\paragraph*{sequence signatures as objects}
+Observations suggest the existence of species-specific oligonucleotide signature in genomic sequences\cite{Laczny2014}\cite{Cheng1194}. These consist of k-mers and can be represented as vectors in high-dimensional Euclidean space; for human interpretation these vectors need to be transformed in a two or three dimensional space\cite{Laczny2014}.\\
+For construction of these vectors a joint probability is assigned to the k-mers and a similarity function to the corresponding points in high-dimensional space. Using a Kullback-Leibler divergence and the optimizations stated before the points can be optimized.\\
+Using center log-ratio (CLR)-transformed -- a normalization step -- oligonucleotide signatures and the BH-SNE approach of van der Maaten, Laczny \textit{et al.} constructed a tool for application on metagenomic-data with sequence length of 1000 nt -- they state that 600 nt might be an appropriate length for some applications, but with lower values the separation would drop remarkably as seen in (Figure  \ref{img:seperation}) through greater separation of the clusters -- and 5-mers as oligonucleotide signatures, which produced better congruency compared to transformed and untransformed 4-mers.
 \begin{figure}
 	\centering
 	\includegraphics[width=.6\linewidth]{bilder/seperation.png}
@@ -300,7 +293,7 @@ Using center log-ratio (CLR)-transformed -- a normalization step -- oligonucleot
 		(a) 800nt.  (b) 600nt.  (c) 400nt. -- from Laczny \textit{et al.}\cite{Laczny2014}}
 	\label{img:seperation}
 \end{figure}
-\paragraph*{finding of clusters}
+\paragraph*{cluster finding}
 After applying their tool on simulated even (EqualSet01) and logarithmic (LogSet01) distributed data -- sequences gathered from the real-world tend to be unevenly distributed, hence the logarithmic data set -- and closely related data (EqualSet02), their results showed distinct clustering for different species as seen in Figure \ref{img:clusterData1} for EqualSet01 and LogSet01 respectively. Clustering of EqualSet02 resulted in overlapping of closely related organisms and separation of distant relatives. \\
 Overall the runs on simulated data resulted in high sensitivity, specificity and accuracy using human polygonal selection -- as seen in figure \ref{img:clusterData1} by the red polygons -- and a similar output by fitting (semi-)automated Gaussian Mixture model to the data. A selection of values can be taken from table \ref{tab:sens-spec-acc1}.
 \begin{figure}
@@ -351,11 +344,8 @@ As a downside sequences of 1000 nt (or more) were needed to achieve good cluster
 
 \begin{backmatter}
 
-\section*{Competing interests}
 
-\section*{Author's contributions}
 
-\section*{Acknowledgements}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                  The Bibliography                       %%
 %%                                                         %%

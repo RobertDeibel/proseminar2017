@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  23 NOV 2017 13:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  24 NOV 2017 01:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -561,93 +561,77 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <8> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 253.
 
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+ <./bilder/growth_of_novel_gene_discovery.jpg>]
+Overfull \hbox (3.7332pt too wide) in paragraph at lines 271--273
+ \OT1/cmr/m/it/10 The idea be-hind \OT1/cmr/m/n/10 hods like Smith-Waterman or 
+BLAST
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
 
-Overfull \hbox (2.01091pt too wide) in paragraph at lines 281--283
- \OT1/cmr/m/it/10 The idea be-hind \OT1/cmr/m/n/10 An-other method re-lies on t
-he Barnes-
+Underfull \hbox (badness 963) in paragraph at lines 281--283
+\OT1/cmr/m/n/10 For choos-ing these ob-jects van der Maaten used
  []
 
 
-Underfull \hbox (badness 1024) in paragraph at lines 281--283
-\OT1/cmr/m/n/10 Hut-SNE[[]] ap-proach on ma-chine learn-ing, where
+Underfull \hbox (badness 10000) in paragraph at lines 281--283
+
  []
 
-
-Underfull \hbox (badness 1755) in paragraph at lines 281--283
-\OT1/cmr/m/n/10 high-dimensional data can be vi-su-al-ized in time
- []
-
-[2 <./bilder/growth_of_novel_gene_discovery.jpg>]
-
-LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 289.
-
-
-<bilder/seperation.png, id=24, 366.36874pt x 713.66624pt>
+<bilder/seperation.png, id=15, 366.36874pt x 713.66624pt>
 File: bilder/seperation.png Graphic file (type png)
 <use bilder/seperation.png>
-Package pdftex.def Info: bilder/seperation.png  used on input line 296. on inpu
-t line 296.
+Package pdftex.def Info: bilder/seperation.png  used on input line 289. on inpu
+t line 289.
 Package pdftex.def Info: Requested size: 141.00143pt x 274.65889pt on input lin
-e 296.
-<bilder/clusterData1.jpg, id=26, 929.4725pt x 1010.77625pt>
+e 289.
+<bilder/clusterData1.jpg, id=17, 929.4725pt x 1010.77625pt>
 File: bilder/clusterData1.jpg Graphic file (type jpg)
 <use bilder/clusterData1.jpg>
-Package pdftex.def Info: bilder/clusterData1.jpg  used on input line 308. on in
-put line 308.
+Package pdftex.def Info: bilder/clusterData1.jpg  used on input line 301. on in
+put line 301.
 Package pdftex.def Info: Requested size: 230.299pt x 250.44165pt on input line 
-308.
+301.
 
-Overfull \hbox (7.799pt too wide) in paragraph at lines 308--309
+Overfull \hbox (7.799pt too wide) in paragraph at lines 301--302
  [][] 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 315.
+(Font)              <8> on input line 308.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 315.
+(Font)              <6> on input line 308.
 
-Overfull \hbox (5.30602pt too wide) in paragraph at lines 304--325
-\OT1/cmr/m/n/10 rith-mic data set -- and closely re-lated data (EqualSet02),
- []
-
-
-Underfull \hbox (badness 1033) in paragraph at lines 304--325
-\OT1/cmr/m/n/10 their re-sults showed dis-tinct clus-ter-ing for dif-fer-
- []
-
-
-Underfull \hbox (badness 1895) in paragraph at lines 304--325
+Underfull \hbox (badness 1895) in paragraph at lines 297--318
 \OT1/cmr/m/n/10 sen-si-tiv-ity, speci-ficity and ac-cu-racy us-ing hu-man
  []
 
+[2]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--329
+Underfull \hbox (badness 10000) in paragraph at lines 319--322
 
  []
 
-[3 <./bilder/seperation.png>]
+[3 <./bilder/seperation.png> <./bilder/clusterData1.jpg>]
+(./AlignmentFreeMethods.bbl
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <7> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 354.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 3.
 
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-(./AlignmentFreeMethods.bbl
 Overfull \hbox (4.44104pt too wide) in paragraph at lines 90--102
 \OT1/cmss/m/n/7 http://www.worldscientific.com/doi/pdf/10.1142/9789814295291[]0
 003. 
@@ -665,24 +649,22 @@ Overfull \hbox (38.08508pt too wide) in paragraph at lines 106--122
 67/2/bbt067.pdf 
  []
 
-[4 <./bilder/clusterData1.jpg>]) 
+) 
 AED: lastpage setting LastPage
-[5
-
-] (./AlignmentFreeMethods.aux)
+[4] (./AlignmentFreeMethods.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 3439 strings out of 492985
- 44120 string characters out of 6138637
+ 3436 strings out of 492985
+ 44081 string characters out of 6138637
  125684 words of memory out of 5000000
- 6950 multiletter control sequences out of 15000+600000
- 9866 words of font info for 34 fonts, out of 8000000 for 9000
+ 6948 multiletter control sequences out of 15000+600000
+ 9510 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,37p,641b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,9n,37p,643b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -691,15 +673,14 @@ r10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
 are/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.p
-fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmti10.pfb>
-Output written on AlignmentFreeMethods.pdf (5 pages, 1279561 bytes).
+cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pf
+b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on AlignmentFreeMethods.pdf (4 pages, 1268206 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 58 compressed objects within 1 object stream
+ 78 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
