@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  24 NOV 2017 01:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  24 NOV 2017 22:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -540,11 +540,16 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <24> not available
 
 \address@aff1=\toks23
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 232.
+(Font)              <7> on input line 176.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 232.
+(Font)              <5> on input line 176.
 
-Overfull \hbox (4.43141pt too wide) in paragraph at lines 244--247
+LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 177.
+
+
+
+Overfull \hbox (4.43141pt too wide) in paragraph at lines 248--251
  \OT1/cmr/m/it/10 NGS -- Next Gen-er-a-tion Se-quenc-ing \OT1/cmr/m/n/10 The sh
 eer amount
  []
@@ -553,134 +558,155 @@ eer amount
 File: bilder/growth_of_novel_gene_discovery.jpg Graphic file (type jpg)
 <use bilder/growth_of_novel_gene_discovery.jpg>
 Package pdftex.def Info: bilder/growth_of_novel_gene_discovery.jpg  used on inp
-ut line 252. on input line 252.
+ut line 256. on input line 256.
 Package pdftex.def Info: Requested size: 211.49857pt x 151.79204pt on input lin
-e 252.
+e 256.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 253.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 257.
 
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./bilder/growth_of_novel_gene_discovery.jpg>]
-Overfull \hbox (3.7332pt too wide) in paragraph at lines 271--273
- \OT1/cmr/m/it/10 The idea be-hind \OT1/cmr/m/n/10 hods like Smith-Waterman or 
-BLAST
+]
+Overfull \hbox (2.09448pt too wide) in paragraph at lines 285--286
+ \OT1/cmr/m/it/10 CVTree \OT1/cmr/m/n/10 An-other ap-proach uti-lizes the ex-pe
+cted count
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
-
- []
-
-
-Underfull \hbox (badness 963) in paragraph at lines 281--283
+[2 <./bilder/growth_of_novel_gene_discovery.jpg>]
+Underfull \hbox (badness 963) in paragraph at lines 300--302
 \OT1/cmr/m/n/10 For choos-ing these ob-jects van der Maaten used
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--283
+Underfull \hbox (badness 10000) in paragraph at lines 300--302
 
  []
 
-<bilder/seperation.png, id=15, 366.36874pt x 713.66624pt>
+<bilder/seperation.png, id=27, 366.36874pt x 713.66624pt>
 File: bilder/seperation.png Graphic file (type png)
 <use bilder/seperation.png>
-Package pdftex.def Info: bilder/seperation.png  used on input line 289. on inpu
-t line 289.
+Package pdftex.def Info: bilder/seperation.png  used on input line 309. on inpu
+t line 309.
 Package pdftex.def Info: Requested size: 141.00143pt x 274.65889pt on input lin
-e 289.
-<bilder/clusterData1.jpg, id=17, 929.4725pt x 1010.77625pt>
+e 309.
+<bilder/clusterData1.jpg, id=29, 929.4725pt x 1010.77625pt>
 File: bilder/clusterData1.jpg Graphic file (type jpg)
 <use bilder/clusterData1.jpg>
-Package pdftex.def Info: bilder/clusterData1.jpg  used on input line 301. on in
-put line 301.
+Package pdftex.def Info: bilder/clusterData1.jpg  used on input line 323. on in
+put line 323.
 Package pdftex.def Info: Requested size: 230.299pt x 250.44165pt on input line 
-301.
+323.
 
-Overfull \hbox (7.799pt too wide) in paragraph at lines 301--302
+Overfull \hbox (7.799pt too wide) in paragraph at lines 323--324
  [][] 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 308.
+(Font)              <8> on input line 330.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 308.
+(Font)              <6> on input line 330.
 
-Underfull \hbox (badness 1895) in paragraph at lines 297--318
-\OT1/cmr/m/n/10 sen-si-tiv-ity, speci-ficity and ac-cu-racy us-ing hu-man
+Overfull \hbox (3.2227pt too wide) in paragraph at lines 317--340
+\OT1/cmr/m/n/10 After ap-ply-ing their tool on the sim-u-lated metagenomes
  []
 
-[2]
+
+Underfull \hbox (badness 1033) in paragraph at lines 317--340
+\OT1/cmr/m/n/10 their re-sults showed dis-tinct clus-ter-ing for dif-fer-
+ []
+
+[3 <./bilder/seperation.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<bilder/humangutCluster.jpg, id=34, 929.4725pt x 989.6975pt>
+File: bilder/humangutCluster.jpg Graphic file (type jpg)
+<use bilder/humangutCluster.jpg>
+Package pdftex.def Info: bilder/humangutCluster.jpg  used on input line 346. on
+ input line 346.
+Package pdftex.def Info: Requested size: 211.49857pt x 225.19429pt on input lin
+e 346.
+<bilder/groudwaterCluster.png, id=35, 516.93124pt x 530.98375pt>
+File: bilder/groudwaterCluster.png Graphic file (type png)
+<use bilder/groudwaterCluster.png>
+Package pdftex.def Info: bilder/groudwaterCluster.png  used on input line 351. 
+on input line 351.
+Package pdftex.def Info: Requested size: 211.49857pt x 217.25102pt on input lin
+e 351.
+<bilder/marineCluster.png, id=36, 384.43625pt x 378.41376pt>
+File: bilder/marineCluster.png Graphic file (type png)
+<use bilder/marineCluster.png>
+Package pdftex.def Info: bilder/marineCluster.png  used on input line 357. on i
+nput line 357.
+Package pdftex.def Info: Requested size: 211.49857pt x 208.19171pt on input lin
+e 357.
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--322
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- []
-
-[3 <./bilder/seperation.png> <./bilder/clusterData1.jpg>]
+[4 <./bilder/clusterData1.jpg> <./bilder/humangutCluster.jpg>]
 (./AlignmentFreeMethods.bbl
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 3.
 
 
-Overfull \hbox (4.44104pt too wide) in paragraph at lines 90--102
+Overfull \hbox (4.44104pt too wide) in paragraph at lines 102--114
 \OT1/cmss/m/n/7 http://www.worldscientific.com/doi/pdf/10.1142/9789814295291[]0
 003. 
  []
 
 
-Overfull \hbox (2.47957pt too wide) in paragraph at lines 90--102
+Overfull \hbox (2.47957pt too wide) in paragraph at lines 102--114
 \OT1/cmss/m/n/7 http://www.worldscientific.com/doi/abs/10.1142/9789814295291[]0
 003 
  []
 
 
-Overfull \hbox (38.08508pt too wide) in paragraph at lines 106--122
+Overfull \hbox (38.08508pt too wide) in paragraph at lines 118--134
 \OT1/cmss/m/n/7 /oup/backfile/content[]public/journal/bib/15/3/10.1093/bib/bbt0
 67/2/bbt067.pdf 
  []
 
-) 
+[5 <./bilder/groudwaterCluster.png> <./bilder/marineCluster.png>])
+
 AED: lastpage setting LastPage
-[4] (./AlignmentFreeMethods.aux)
+[6
+
+] (./AlignmentFreeMethods.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 3436 strings out of 492985
- 44081 string characters out of 6138637
- 125684 words of memory out of 5000000
- 6948 multiletter control sequences out of 15000+600000
- 9510 words of font info for 33 fonts, out of 8000000 for 9000
+ 3459 strings out of 492985
+ 44631 string characters out of 6138637
+ 124718 words of memory out of 5000000
+ 6967 multiletter control sequences out of 15000+600000
+ 9866 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,37p,643b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,10n,37p,644b,388s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pf
-b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on AlignmentFreeMethods.pdf (4 pages, 1268206 bytes).
+r10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmss17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on AlignmentFreeMethods.pdf (6 pages, 1932245 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 101 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
