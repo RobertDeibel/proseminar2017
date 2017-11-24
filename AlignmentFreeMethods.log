@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  24 NOV 2017 22:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  24 NOV 2017 22:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -575,46 +575,51 @@ Overfull \hbox (2.09448pt too wide) in paragraph at lines 285--286
 cted count
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--293
+
+ []
+
 [2 <./bilder/growth_of_novel_gene_discovery.jpg>]
-Underfull \hbox (badness 963) in paragraph at lines 300--302
+Underfull \hbox (badness 963) in paragraph at lines 301--303
 \OT1/cmr/m/n/10 For choos-ing these ob-jects van der Maaten used
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--302
+Underfull \hbox (badness 10000) in paragraph at lines 301--303
 
  []
 
 <bilder/seperation.png, id=27, 366.36874pt x 713.66624pt>
 File: bilder/seperation.png Graphic file (type png)
 <use bilder/seperation.png>
-Package pdftex.def Info: bilder/seperation.png  used on input line 309. on inpu
-t line 309.
+Package pdftex.def Info: bilder/seperation.png  used on input line 310. on inpu
+t line 310.
 Package pdftex.def Info: Requested size: 141.00143pt x 274.65889pt on input lin
-e 309.
+e 310.
 <bilder/clusterData1.jpg, id=29, 929.4725pt x 1010.77625pt>
 File: bilder/clusterData1.jpg Graphic file (type jpg)
 <use bilder/clusterData1.jpg>
-Package pdftex.def Info: bilder/clusterData1.jpg  used on input line 323. on in
-put line 323.
+Package pdftex.def Info: bilder/clusterData1.jpg  used on input line 324. on in
+put line 324.
 Package pdftex.def Info: Requested size: 230.299pt x 250.44165pt on input line 
-323.
+324.
 
-Overfull \hbox (7.799pt too wide) in paragraph at lines 323--324
+Overfull \hbox (7.799pt too wide) in paragraph at lines 324--325
  [][] 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 330.
+(Font)              <8> on input line 331.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 330.
+(Font)              <6> on input line 331.
 
-Overfull \hbox (3.2227pt too wide) in paragraph at lines 317--340
+Overfull \hbox (3.2227pt too wide) in paragraph at lines 318--341
 \OT1/cmr/m/n/10 After ap-ply-ing their tool on the sim-u-lated metagenomes
  []
 
 
-Underfull \hbox (badness 1033) in paragraph at lines 317--340
+Underfull \hbox (badness 1033) in paragraph at lines 318--341
 \OT1/cmr/m/n/10 their re-sults showed dis-tinct clus-ter-ing for dif-fer-
  []
 
@@ -625,24 +630,24 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <bilder/humangutCluster.jpg, id=34, 929.4725pt x 989.6975pt>
 File: bilder/humangutCluster.jpg Graphic file (type jpg)
 <use bilder/humangutCluster.jpg>
-Package pdftex.def Info: bilder/humangutCluster.jpg  used on input line 346. on
- input line 346.
+Package pdftex.def Info: bilder/humangutCluster.jpg  used on input line 347. on
+ input line 347.
 Package pdftex.def Info: Requested size: 211.49857pt x 225.19429pt on input lin
-e 346.
+e 347.
 <bilder/groudwaterCluster.png, id=35, 516.93124pt x 530.98375pt>
 File: bilder/groudwaterCluster.png Graphic file (type png)
 <use bilder/groudwaterCluster.png>
-Package pdftex.def Info: bilder/groudwaterCluster.png  used on input line 351. 
-on input line 351.
+Package pdftex.def Info: bilder/groudwaterCluster.png  used on input line 352. 
+on input line 352.
 Package pdftex.def Info: Requested size: 211.49857pt x 217.25102pt on input lin
-e 351.
+e 352.
 <bilder/marineCluster.png, id=36, 384.43625pt x 378.41376pt>
 File: bilder/marineCluster.png Graphic file (type png)
 <use bilder/marineCluster.png>
-Package pdftex.def Info: bilder/marineCluster.png  used on input line 357. on i
-nput line 357.
+Package pdftex.def Info: bilder/marineCluster.png  used on input line 358. on i
+nput line 358.
 Package pdftex.def Info: Requested size: 211.49857pt x 208.19171pt on input lin
-e 357.
+e 358.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -653,19 +658,19 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <7> not available
 (Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 3.
 
 
-Overfull \hbox (4.44104pt too wide) in paragraph at lines 102--114
+Overfull \hbox (4.44104pt too wide) in paragraph at lines 90--102
 \OT1/cmss/m/n/7 http://www.worldscientific.com/doi/pdf/10.1142/9789814295291[]0
 003. 
  []
 
 
-Overfull \hbox (2.47957pt too wide) in paragraph at lines 102--114
+Overfull \hbox (2.47957pt too wide) in paragraph at lines 90--102
 \OT1/cmss/m/n/7 http://www.worldscientific.com/doi/abs/10.1142/9789814295291[]0
 003 
  []
 
 
-Overfull \hbox (38.08508pt too wide) in paragraph at lines 118--134
+Overfull \hbox (38.08508pt too wide) in paragraph at lines 106--122
 \OT1/cmss/m/n/7 /oup/backfile/content[]public/journal/bib/15/3/10.1093/bib/bbt0
 67/2/bbt067.pdf 
  []
@@ -688,7 +693,7 @@ Here is how much of TeX's memory you used:
  6967 multiletter control sequences out of 15000+600000
  9866 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,37p,644b,388s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,10n,37p,742b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -703,7 +708,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on AlignmentFreeMethods.pdf (6 pages, 1932245 bytes).
+Output written on AlignmentFreeMethods.pdf (6 pages, 1932127 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream

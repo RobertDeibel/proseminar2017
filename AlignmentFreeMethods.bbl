@@ -43,18 +43,6 @@
 \csname PreBibitemsHook\endcsname
 
 %%% 1
-\bibitem{DBLP:journals/corr/abs-1301-3342}
-\begin{botherref}
-\oauthor{\bparticle{van~der} \bsnm{Maaten}, \binits{L.}}:
-Barnes-hut-sne.
-CoRR
-\textbf{abs/1301.3342}
-(2013).
-\arxivurl{1301.3342}
-\end{botherref}
-\endbibitem
-
-%%% 2
 \bibitem{handelsman2004metagenomics}
 \begin{barticle}
 \bauthor{\bsnm{Handelsman}, \binits{J.}}:
@@ -66,7 +54,7 @@ CoRR
 \end{barticle}
 \endbibitem
 
-%%% 3
+%%% 2
 \bibitem{KAKIRDE20101911}
 \begin{barticle}
 \bauthor{\bsnm{Kakirde}, \binits{K.S.}},
@@ -82,7 +70,7 @@ doi:\doiurl{10.1016/j.soilbio.2010.07.021}
 \end{barticle}
 \endbibitem
 
-%%% 4
+%%% 3
 \bibitem{STREIT2004492}
 \begin{barticle}
 \bauthor{\bsnm{Streit}, \binits{W.R.}},
@@ -96,7 +84,7 @@ doi:\doiurl{10.1016/j.mib.2004.08.002}
 \end{barticle}
 \endbibitem
 
-%%% 5
+%%% 4
 \bibitem{doi:10.1142/9789814295291_0003}
 \begin{bbook}
 \bauthor{\bsnm{ESSINGER}, \binits{S.D.}},
@@ -112,7 +100,7 @@ doi:\doiurl{10.1142/9789814295291\_0003}.
 \end{bbook}
 \endbibitem
 
-%%% 6
+%%% 5
 \bibitem{doi:10.1093/bib/bbt067}
 \begin{barticle}
 \bauthor{\bsnm{Song}, \binits{K.}},
@@ -132,7 +120,7 @@ doi:\doiurl{10.1093/bib/bbt067}.
 \end{barticle}
 \endbibitem
 
-%%% 7
+%%% 6
 \bibitem{Laczny2014}
 \begin{barticle}
 \bauthor{\bsnm{Laczny}, \binits{C.C.}},
@@ -149,7 +137,7 @@ doi:\doiurl{10.1093/bib/bbt067}.
 \end{barticle}
 \endbibitem
 
-%%% 8
+%%% 7
 \bibitem{torney1990computation}
 \begin{bchapter}
 \bauthor{\bsnm{Torney}, \binits{D.C.}},
@@ -165,7 +153,7 @@ In: \bbtitle{Computers and DNA: the Proceedings of the Interface Between
 \end{bchapter}
 \endbibitem
 
-%%% 9
+%%% 8
 \bibitem{kantorovitz2007statistical}
 \begin{barticle}
 \bauthor{\bsnm{Kantorovitz}, \binits{M.R.}},
@@ -180,7 +168,7 @@ In: \bbtitle{Computers and DNA: the Proceedings of the Interface Between
 \end{barticle}
 \endbibitem
 
-%%% 10
+%%% 9
 \bibitem{qi2004cvtree}
 \begin{barticle}
 \bauthor{\bsnm{Qi}, \binits{J.}},
@@ -193,6 +181,18 @@ In: \bbtitle{Computers and DNA: the Proceedings of the Interface Between
 \bfpage{45}--\blpage{47}
 (\byear{2004})
 \end{barticle}
+\endbibitem
+
+%%% 10
+\bibitem{DBLP:journals/corr/abs-1301-3342}
+\begin{botherref}
+\oauthor{\bparticle{van~der} \bsnm{Maaten}, \binits{L.}}:
+Barnes-hut-sne.
+CoRR
+\textbf{abs/1301.3342}
+(2013).
+\arxivurl{1301.3342}
+\end{botherref}
 \endbibitem
 
 %%% 11
@@ -319,17 +319,6 @@ doi:\doiurl{10.1128/AEM.00473-09}.
 <refgrp>
 
 <bibl id="B1">
-  <title><p>Barnes-Hut-SNE</p></title>
-  <aug>
-    <au><snm>Maaten</snm><fnm>L</fnm></au>
-  </aug>
-  <source>CoRR</source>
-  <pubdate>2013</pubdate>
-  <volume>abs/1301.3342</volume>
-  <url>http://arxiv.org/abs/1301.3342</url>
-</bibl>
-
-<bibl id="B2">
   <title><p>Metagenomics: application of genomics to uncultured
   microorganisms</p></title>
   <aug>
@@ -344,7 +333,7 @@ doi:\doiurl{10.1128/AEM.00473-09}.
   <lpage>-685</lpage>
 </bibl>
 
-<bibl id="B3">
+<bibl id="B2">
   <title><p>Size does matter: Application-driven approaches for soil
   metagenomics</p></title>
   <aug>
@@ -361,7 +350,7 @@ doi:\doiurl{10.1128/AEM.00473-09}.
   <url>http://www.sciencedirect.com/science/article/pii/S0038071710002695</url>
 </bibl>
 
-<bibl id="B4">
+<bibl id="B3">
   <title><p>Metagenomics – the key to the uncultured microbes</p></title>
   <aug>
     <au><snm>Streit</snm><fnm>WR</fnm></au>
@@ -376,7 +365,7 @@ doi:\doiurl{10.1128/AEM.00473-09}.
   <url>http://www.sciencedirect.com/science/article/pii/S1369527404000967</url>
 </bibl>
 
-<bibl id="B5">
+<bibl id="B4">
   <title><p>BENCHMARKING BLAST ACCURACY OF GENUS/PHYLA CLASSIFICATION OF
   METAGENOMIC READS</p></title>
   <aug>
@@ -391,7 +380,7 @@ doi:\doiurl{10.1128/AEM.00473-09}.
   <url>http://www.worldscientific.com/doi/abs/10.1142/9789814295291\_0003</url>
 </bibl>
 
-<bibl id="B6">
+<bibl id="B5">
   <title><p>New developments of alignment-free sequence comparison: measures,
   statistics and next-generation sequencing</p></title>
   <aug>
@@ -411,7 +400,7 @@ doi:\doiurl{10.1128/AEM.00473-09}.
   <url>+ http://dx.doi.org/10.1093/bib/bbt067</url>
 </bibl>
 
-<bibl id="B7">
+<bibl id="B6">
   <title><p>Alignment-free Visualization of Metagenomic Data by Nonlinear
   Dimension Reduction</p></title>
   <aug>
@@ -429,7 +418,7 @@ doi:\doiurl{10.1128/AEM.00473-09}.
   <note>Article</note>
 </bibl>
 
-<bibl id="B8">
+<bibl id="B7">
   <title><p>Computation of d2: a measure of sequence dissimilarity</p></title>
   <aug>
     <au><snm>Torney</snm><fnm>DC</fnm></au>
@@ -444,7 +433,7 @@ doi:\doiurl{10.1128/AEM.00473-09}.
   <pubdate>1990</pubdate>
 </bibl>
 
-<bibl id="B9">
+<bibl id="B8">
   <title><p>A statistical method for alignment-free comparison of regulatory
   sequences</p></title>
   <aug>
@@ -461,7 +450,7 @@ doi:\doiurl{10.1128/AEM.00473-09}.
   <lpage>-i255</lpage>
 </bibl>
 
-<bibl id="B10">
+<bibl id="B9">
   <title><p>CVTree: a phylogenetic tree reconstruction tool based on whole
   genomes</p></title>
   <aug>
@@ -476,6 +465,17 @@ doi:\doiurl{10.1128/AEM.00473-09}.
   <issue>suppl\_2</issue>
   <fpage>W45</fpage>
   <lpage>-W47</lpage>
+</bibl>
+
+<bibl id="B10">
+  <title><p>Barnes-Hut-SNE</p></title>
+  <aug>
+    <au><snm>Maaten</snm><fnm>L</fnm></au>
+  </aug>
+  <source>CoRR</source>
+  <pubdate>2013</pubdate>
+  <volume>abs/1301.3342</volume>
+  <url>http://arxiv.org/abs/1301.3342</url>
 </bibl>
 
 <bibl id="B11">
