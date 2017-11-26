@@ -1,6 +1,6 @@
 %% BioMed_Central_Bib_Style_v1.01
 
-\begin{thebibliography}{14}
+\begin{thebibliography}{20}
 % BibTex style file: bmc-mathphys.bst (version 2.1), 2014-07-24
 \ifx \bisbn   \undefined \def \bisbn  #1{ISBN #1}\fi
 \ifx \binits  \undefined \def \binits#1{#1}\fi
@@ -95,8 +95,7 @@ pp. \bfpage{10}--\blpage{20}.
 \bpublisher{WORLD SCIENTIFIC}, \blocation{???}
 (\byear{2012}).
 doi:\doiurl{10.1142/9789814295291\_0003}.
-\arxivurl{http://www.worldscientific.com/doi/pdf/10.1142/9789814295291\_0003}.
-\burl{http://www.worldscientific.com/doi/abs/10.1142/9789814295291\_0003}
+\arxivurl{http://www.worldscientific.com/doi/pdf/10.1142/9789814295291\_0003}
 \end{bbook}
 \endbibitem
 
@@ -115,8 +114,7 @@ doi:\doiurl{10.1142/9789814295291\_0003}.
 \bvolume{15}(\bissue{3}),
 \bfpage{343}--\blpage{353}
 (\byear{2014}).
-doi:\doiurl{10.1093/bib/bbt067}.
-\arxivurl{/oup/backfile/content\_public/journal/bib/15/3/10.1093/bib/bbt067/2/bbt067.pdf}
+doi:\doiurl{10.1093/bib/bbt067}
 \end{barticle}
 \endbibitem
 
@@ -184,6 +182,112 @@ In: \bbtitle{Computers and DNA: the Proceedings of the Interface Between
 \endbibitem
 
 %%% 10
+\bibitem{qi2004whole}
+\begin{barticle}
+\bauthor{\bsnm{Qi}, \binits{J.}},
+\bauthor{\bsnm{Wang}, \binits{B.}},
+\bauthor{\bsnm{Hao}, \binits{B.-I.}}:
+\batitle{Whole proteome prokaryote phylogeny without sequence alignment: a
+  k-string composition approach}.
+\bjtitle{Journal of molecular evolution}
+\bvolume{58}(\bissue{1}),
+\bfpage{1}--\blpage{11}
+(\byear{2004})
+\end{barticle}
+\endbibitem
+
+%%% 11
+\bibitem{zuo2015cvtree3}
+\begin{barticle}
+\bauthor{\bsnm{Zuo}, \binits{G.}},
+\bauthor{\bsnm{Hao}, \binits{B.}}:
+\batitle{Cvtree3 web server for whole-genome-based and alignment-free
+  prokaryotic phylogeny and taxonomy}.
+\bjtitle{Genomics, proteomics \& bioinformatics}
+\bvolume{13}(\bissue{5}),
+\bfpage{321}--\blpage{331}
+(\byear{2015})
+\end{barticle}
+\endbibitem
+
+%%% 12
+\bibitem{shepp1962normal}
+\begin{barticle}
+\bauthor{\bsnm{Shepp}, \binits{L.}}:
+\batitle{Normal functions of normal random variables}.
+\bjtitle{Siam Review}
+\bvolume{4}(\bissue{3}),
+\bfpage{255}
+(\byear{1962})
+\end{barticle}
+\endbibitem
+
+%%% 13
+\bibitem{muegge2011diet}
+\begin{barticle}
+\bauthor{\bsnm{Muegge}, \binits{B.D.}},
+\bauthor{\bsnm{Kuczynski}, \binits{J.}},
+\bauthor{\bsnm{Knights}, \binits{D.}},
+\bauthor{\bsnm{Clemente}, \binits{J.C.}},
+\bauthor{\bsnm{Gonz{\'a}lez}, \binits{A.}},
+\bauthor{\bsnm{Fontana}, \binits{L.}},
+\bauthor{\bsnm{Henrissat}, \binits{B.}},
+\bauthor{\bsnm{Knight}, \binits{R.}},
+\bauthor{\bsnm{Gordon}, \binits{J.I.}}:
+\batitle{Diet drives convergence in gut microbiome functions across mammalian
+  phylogeny and within humans}.
+\bjtitle{Science}
+\bvolume{332}(\bissue{6032}),
+\bfpage{970}--\blpage{974}
+(\byear{2011})
+\end{barticle}
+\endbibitem
+
+%%% 14
+\bibitem{rusch2007sorcerer}
+\begin{barticle}
+\bauthor{\bsnm{Rusch}, \binits{D.B.}},
+\bauthor{\bsnm{Halpern}, \binits{A.L.}},
+\bauthor{\bsnm{Sutton}, \binits{G.}},
+\bauthor{\bsnm{Heidelberg}, \binits{K.B.}},
+\bauthor{\bsnm{Williamson}, \binits{S.}},
+\bauthor{\bsnm{Yooseph}, \binits{S.}},
+\bauthor{\bsnm{Wu}, \binits{D.}},
+\bauthor{\bsnm{Eisen}, \binits{J.A.}},
+\bauthor{\bsnm{Hoffman}, \binits{J.M.}},
+\bauthor{\bsnm{Remington}, \binits{K.}}, \betal:
+\batitle{The sorcerer ii global ocean sampling expedition: northwest atlantic
+  through eastern tropical pacific}.
+\bjtitle{PLoS biology}
+\bvolume{5}(\bissue{3}),
+\bfpage{77}
+(\byear{2007})
+\end{barticle}
+\endbibitem
+
+%%% 15
+\bibitem{kurokawa2007comparative}
+\begin{barticle}
+\bauthor{\bsnm{Kurokawa}, \binits{K.}},
+\bauthor{\bsnm{Itoh}, \binits{T.}},
+\bauthor{\bsnm{Kuwahara}, \binits{T.}},
+\bauthor{\bsnm{Oshima}, \binits{K.}},
+\bauthor{\bsnm{Toh}, \binits{H.}},
+\bauthor{\bsnm{Toyoda}, \binits{A.}},
+\bauthor{\bsnm{Takami}, \binits{H.}},
+\bauthor{\bsnm{Morita}, \binits{H.}},
+\bauthor{\bsnm{Sharma}, \binits{V.K.}},
+\bauthor{\bsnm{Srivastava}, \binits{T.P.}}, \betal:
+\batitle{Comparative metagenomics revealed commonly enriched gene sets in human
+  gut microbiomes}.
+\bjtitle{Dna Research}
+\bvolume{14}(\bissue{4}),
+\bfpage{169}--\blpage{181}
+(\byear{2007})
+\end{barticle}
+\endbibitem
+
+%%% 16
 \bibitem{DBLP:journals/corr/abs-1301-3342}
 \begin{botherref}
 \oauthor{\bparticle{van~der} \bsnm{Maaten}, \binits{L.}}:
@@ -195,7 +299,7 @@ CoRR
 \end{botherref}
 \endbibitem
 
-%%% 11
+%%% 17
 \bibitem{Cheng1194}
 \begin{barticle}
 \bauthor{\bsnm{Cheng}, \binits{T.-Y.}},
@@ -210,7 +314,7 @@ doi:\doiurl{10.1126/science.141.3586.1194}.
 \end{barticle}
 \endbibitem
 
-%%% 12
+%%% 18
 \bibitem{Wrighton1661}
 \begin{barticle}
 \bauthor{\bsnm{Wrighton}, \binits{K.C.}},
@@ -236,7 +340,7 @@ doi:\doiurl{10.1126/science.1224041}.
 \end{barticle}
 \endbibitem
 
-%%% 13
+%%% 19
 \bibitem{Arumugam2011}
 \begin{barticle}
 \bauthor{\bsnm{Arumugam}, \binits{M.}},
@@ -291,7 +395,7 @@ doi:\doiurl{10.1126/science.1224041}.
 \end{barticle}
 \endbibitem
 
-%%% 14
+%%% 20
 \bibitem{Konstantinidis15082009}
 \begin{barticle}
 \bauthor{\bsnm{Konstantinidis}, \binits{K.T.}},
@@ -377,7 +481,6 @@ doi:\doiurl{10.1128/AEM.00473-09}.
   <pubdate>2012</pubdate>
   <fpage>10</fpage>
   <lpage>20</lpage>
-  <url>http://www.worldscientific.com/doi/abs/10.1142/9789814295291\_0003</url>
 </bibl>
 
 <bibl id="B5">
@@ -468,6 +571,124 @@ doi:\doiurl{10.1128/AEM.00473-09}.
 </bibl>
 
 <bibl id="B10">
+  <title><p>Whole proteome prokaryote phylogeny without sequence alignment: a
+  K-string composition approach</p></title>
+  <aug>
+    <au><snm>Qi</snm><fnm>J</fnm></au>
+    <au><snm>Wang</snm><fnm>B</fnm></au>
+    <au><snm>Hao</snm><fnm>BI</fnm></au>
+  </aug>
+  <source>Journal of molecular evolution</source>
+  <publisher>Springer</publisher>
+  <pubdate>2004</pubdate>
+  <volume>58</volume>
+  <issue>1</issue>
+  <fpage>1</fpage>
+  <lpage>-11</lpage>
+</bibl>
+
+<bibl id="B11">
+  <title><p>CVTree3 web server for whole-genome-based and alignment-free
+  prokaryotic phylogeny and taxonomy</p></title>
+  <aug>
+    <au><snm>Zuo</snm><fnm>G</fnm></au>
+    <au><snm>Hao</snm><fnm>B</fnm></au>
+  </aug>
+  <source>Genomics, proteomics \& bioinformatics</source>
+  <publisher>Elsevier</publisher>
+  <pubdate>2015</pubdate>
+  <volume>13</volume>
+  <issue>5</issue>
+  <fpage>321</fpage>
+  <lpage>-331</lpage>
+</bibl>
+
+<bibl id="B12">
+  <title><p>Normal functions of normal random variables</p></title>
+  <aug>
+    <au><snm>Shepp</snm><fnm>L</fnm></au>
+  </aug>
+  <source>Siam Review</source>
+  <publisher>Society for Industrial and Applied Mathematics</publisher>
+  <pubdate>1962</pubdate>
+  <volume>4</volume>
+  <issue>3</issue>
+  <fpage>255</fpage>
+</bibl>
+
+<bibl id="B13">
+  <title><p>Diet drives convergence in gut microbiome functions across
+  mammalian phylogeny and within humans</p></title>
+  <aug>
+    <au><snm>Muegge</snm><fnm>BD</fnm></au>
+    <au><snm>Kuczynski</snm><fnm>J</fnm></au>
+    <au><snm>Knights</snm><fnm>D</fnm></au>
+    <au><snm>Clemente</snm><fnm>JC</fnm></au>
+    <au><snm>Gonz{\'a}lez</snm><fnm>A</fnm></au>
+    <au><snm>Fontana</snm><fnm>L</fnm></au>
+    <au><snm>Henrissat</snm><fnm>B</fnm></au>
+    <au><snm>Knight</snm><fnm>R</fnm></au>
+    <au><snm>Gordon</snm><fnm>JI</fnm></au>
+  </aug>
+  <source>Science</source>
+  <publisher>American Association for the Advancement of Science</publisher>
+  <pubdate>2011</pubdate>
+  <volume>332</volume>
+  <issue>6032</issue>
+  <fpage>970</fpage>
+  <lpage>-974</lpage>
+</bibl>
+
+<bibl id="B14">
+  <title><p>The Sorcerer II global ocean sampling expedition: northwest
+  Atlantic through eastern tropical Pacific</p></title>
+  <aug>
+    <au><snm>Rusch</snm><fnm>DB</fnm></au>
+    <au><snm>Halpern</snm><fnm>AL</fnm></au>
+    <au><snm>Sutton</snm><fnm>G</fnm></au>
+    <au><snm>Heidelberg</snm><fnm>KB</fnm></au>
+    <au><snm>Williamson</snm><fnm>S</fnm></au>
+    <au><snm>Yooseph</snm><fnm>S</fnm></au>
+    <au><snm>Wu</snm><fnm>D</fnm></au>
+    <au><snm>Eisen</snm><fnm>JA</fnm></au>
+    <au><snm>Hoffman</snm><fnm>JM</fnm></au>
+    <au><snm>Remington</snm><fnm>K</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>PLoS biology</source>
+  <publisher>Public Library of Science</publisher>
+  <pubdate>2007</pubdate>
+  <volume>5</volume>
+  <issue>3</issue>
+  <fpage>e77</fpage>
+</bibl>
+
+<bibl id="B15">
+  <title><p>Comparative metagenomics revealed commonly enriched gene sets in
+  human gut microbiomes</p></title>
+  <aug>
+    <au><snm>Kurokawa</snm><fnm>K</fnm></au>
+    <au><snm>Itoh</snm><fnm>T</fnm></au>
+    <au><snm>Kuwahara</snm><fnm>T</fnm></au>
+    <au><snm>Oshima</snm><fnm>K</fnm></au>
+    <au><snm>Toh</snm><fnm>H</fnm></au>
+    <au><snm>Toyoda</snm><fnm>A</fnm></au>
+    <au><snm>Takami</snm><fnm>H</fnm></au>
+    <au><snm>Morita</snm><fnm>H</fnm></au>
+    <au><snm>Sharma</snm><fnm>VK</fnm></au>
+    <au><snm>Srivastava</snm><fnm>TP</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>Dna Research</source>
+  <publisher>Oxford University Press</publisher>
+  <pubdate>2007</pubdate>
+  <volume>14</volume>
+  <issue>4</issue>
+  <fpage>169</fpage>
+  <lpage>-181</lpage>
+</bibl>
+
+<bibl id="B16">
   <title><p>Barnes-Hut-SNE</p></title>
   <aug>
     <au><snm>Maaten</snm><fnm>L</fnm></au>
@@ -478,7 +699,7 @@ doi:\doiurl{10.1128/AEM.00473-09}.
   <url>http://arxiv.org/abs/1301.3342</url>
 </bibl>
 
-<bibl id="B11">
+<bibl id="B17">
   <title><p>Heterogeneity of DNA in Density and Base Composition</p></title>
   <aug>
     <au><snm>Cheng</snm><fnm>TY</fnm></au>
@@ -494,7 +715,7 @@ doi:\doiurl{10.1128/AEM.00473-09}.
   <url>http://science.sciencemag.org/content/141/3586/1194</url>
 </bibl>
 
-<bibl id="B12">
+<bibl id="B18">
   <title><p>Fermentation, Hydrogen, and Sulfur Metabolism in Multiple
   Uncultivated Bacterial Phyla</p></title>
   <aug>
@@ -521,7 +742,7 @@ doi:\doiurl{10.1128/AEM.00473-09}.
   <url>http://science.sciencemag.org/content/337/6102/1661</url>
 </bibl>
 
-<bibl id="B13">
+<bibl id="B19">
   <title><p>Enterotypes of the human gut microbiome</p></title>
   <aug>
     <au><snm>Arumugam</snm><fnm>M</fnm></au>
@@ -578,7 +799,7 @@ doi:\doiurl{10.1128/AEM.00473-09}.
   <note>Article</note>
 </bibl>
 
-<bibl id="B14">
+<bibl id="B20">
   <title><p>Comparative Metagenomic Analysis of a Microbial Community Residing
   at a Depth of 4,000 Meters at Station ALOHA in the North Pacific Subtropical
   Gyre</p></title>
