@@ -291,9 +291,9 @@ Notation is taken from Song \textit{et al.}\cite{doi:10.1093/bib/bbt067}.\\
 \\
 $Hao$ calculates the frequencies of appearances of overlapping $k$-tupels indicated with $X_w$ and subtracts a random background using the $(k-2)$-th order Markov chain; this is to minimize the influence of random mutation. After computation of correlation -- $C$ -- a normalization was defined by subtraction from 1 and multiplication with $\frac{1}{2} $.
 $$C=\frac{\sum_w\left(\frac{X_w-E_w^X}{E_w^X}\right)\left(\frac{Y_w-E_w^Y}{E_w^Y}\right)}{\sqrt{\sum_w\left(\frac{X_w-E_w^X}{E_w^X}\right)^2\sum_w\left(\frac{Y_w-E_w^Y}{E_w^Y}\right)^2}}$$
-Where $C$ describes the cosine of the angle between the sequences, were $C=1$ $\Leftrightarrow A=B$ and $C=0$ $\Leftrightarrow \forall a_i \in A,$ $b_i \in B:$ $a_i \neq b_i$. \\
-For CVTree a distance matrix is computed by applying $Hao$ on each pair of sequences, neighbor joining then constructs a phylogenetic tree\cite{qi2004cvtree}. 
-\paragraph*{Nucleotide bias}
+Where $C$ describes the cosine of the angle between the sequences, where $C=1$ $\Leftrightarrow A=B$ and $C=0$ $\Leftrightarrow \forall a_i \in A,$ $b_i \in B:$ $a_i \neq b_i$. \\
+For CVTree a distance matrix is computed by applying $Hao$ on each pair of sequences, neighbor joining then constructs a phylogenetic tree to visualize similarity.\\
+CVTree was tested on a set of 139 prokaryotic genomes computing a robust result\cite{qi2004cvtree}. 
 \subsection*{Machine learning for alignment-free data analysis}
 In his work van der Maaten\cite{DBLP:journals/corr/abs-1301-3342} introduced a machine learning variant -- BH-SNE --  based upon the idea that closely related objects have a larger influence upon each other than unrelated ones. While these objects were originally intended to be points in a picture, Laczny \textit{et al.}\cite{Laczny2014} used reads of metagenomes.\\
 Barnes-Hut-SNE applies the Barnes-Hut algorithm and metric trees to modify the t-SNE method, commonly used in machine learning
