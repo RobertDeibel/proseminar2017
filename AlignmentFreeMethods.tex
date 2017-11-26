@@ -173,9 +173,9 @@
 \begin{abstractbox}
 
 \begin{abstract} % abstract
-	Metagenomics; as the study and analysis of microorganisms of biotopes, like the human gut, is a field of vast research where researchers have to deal with the giant sets of data gathered through NGS-methods. Since the amount of data results in stress on computation and time resources, the development of fast and light analysis tools is appreciated. In this report I introduce the two main branches of analysis tools, while setting the focus on alignment-free methods.\\
+	Metagenomics; as the study and analysis of microorganisms of biotopes, like the human gut, is a field of vast research where researchers have to deal with the giant sets of data gathered through NGS-methods. Since the amount of data puts stress on computation and time resources, the development of fast and light analysis tools is required. In this report I introduce the two main branches of analysis tools, while setting the focus on alignment-free methods.\\
 	While the alignment-based approach has its foundation in the alignment of a target sequence against a database  -- as seen with Smith-Waterman or BLAST -- alignment-free methods have different approaches. Here I will showcase a selection of statistical and machine learning approaches and test selected methods on metagenomic data.\\ 
-	$D2z$, $Hao$ and $d_2^*$ are statistical approaches based on $k$-tupel count frequencies.\\
+	$D2z$, $Hao$ and $d_2^*$ are statistical approaches based on $k$-tupel count frequencies, similarity is measured by applying a metric and through interpretation with current biological knowledge.\\
 	Laczny \textit{et al.} used $k$-mers as vectors in high-dimensional space and the BH-SNE of van der Maaten visualizing related data in two dimensional scatter plots, resulting in a tool with high accuracy for simulated as well as real-world metagenomes.\\
 	Especially for analysis of novel data, sampled from microbioms, alignment-free applications of metagenomics are essential for understanding the cooperation of microorganisms and for further research in immunology.
 \end{abstract}
@@ -234,7 +234,7 @@
 \section*{Introduction}
 \subsection*{Metagenomics}
 \paragraph*{A puddle of mud}
-The metagenome is the whole set of genomes, coding or noncoding, of a population of microorganisms in a microbiome sample. The DNA of organisms is isolated form these samples. As such metagenomics is the study and analysis of these metagenomes\cite{handelsman2004metagenomics}.\\
+The metagenome is the whole set of genomes, coding or noncoding, of a population of microorganisms in a microbiome sample. The DNA of organisms is isolated form these samples. Metagenomics is the study and analysis of these metagenomes \cite{handelsman2004metagenomics}.\\
 A microbiome consists of countless bacteria, archea and viruses; for which $>$90\% are uncultureable, using sequencing and metagenomic analysis as a way to study these.
 %\paragraph*{Accumulated data from microbiome samples}
 
@@ -263,17 +263,17 @@ Here, I'm going to summarize two approaches to data analysis and showcase one of
 \paragraph*{Alignment-based methods are proven but don't include all possibilities}
 The best known approach to analyze reads are the various alignment-based methods.\\
 Sequences are aligned against a database of known genomes, the resulting profiles are analyzed based on several factors.\\
-This approach is proven under various conditions and implemented numerous times; BLAST for example, while not used for metagenomics anymore, has an accuracy well over 80\%\cite{doi:10.1142/9789814295291_0003} and similar values are expected for other alignment-based tools.\\
-However NGS supplies researchers with a lot of data to be analyzed. The analysis of metagenomes is computation heavy. BLAST -- and therefor BLAST-like tools -- align its queries with the entries in a chosen database -- for 10Tb of data one can safely assume this step as time consuming -- this results in the pursuit of faster and more effective methods for data analysis.\\
+This approach well established under various conditions and implemented numerous times. BLAST for example, while not used for metagenomics anymore, has an accuracy well over 80\%\cite{doi:10.1142/9789814295291_0003} and similar values are expected for other alignment-based tools.\\
+However, NGS supplies researchers with a lot of data to be analyzed. The analysis of metagenomes is computation heavy. BLAST -- and therefore BLAST-like tools -- aligns queries with the entries in a database. Applied on metagenomic data this method can be time consuming and has led to the development of faster and more effective methods for data analysis.\\
 Research of  novel data, not listed in databases, is a main focus of metagenomics. This data stays unanalyzed following an alignment-based approach, resulting in a high demand for lightweight tools independent of databases.
 \paragraph*{}
 Here, I will showcase methods with differed approaches to the analysis of such data. 
 \subsection*{An alternative for alignment-based analysis}
-Apart from alignment of sequences another way is basing the analysis on different factors associated with metagenomic data. For this report I reflect the work of Song \textit{et al.} \cite{doi:10.1093/bib/bbt067} and Laczny \textit{et al.} \cite{Laczny2014} both presenting methods for the analysis of metagenomic-data using alignment-free approaches. Their work is based on statistical methods, and visualization and machine learning respectively.
+Apart from alignment of sequences another way is basing the analysis on different factors associated with metagenomic data. In this report I reflect the work of Song \textit{et al.} \cite{doi:10.1093/bib/bbt067} and Laczny \textit{et al.} \cite{Laczny2014} both presenting methods for the analysis of metagenomic-data using alignment-free approaches. Their work is based on statistical methods, and visualization and machine learning respectively.
 \section*{Methods}
 In this section "power" refers to the statistical term, which is the probability that a test correctly rejects the null hypothesis. With $H_0$ the sequences are unrelated and $H_1$ the sequences are related under the underlying model. If not stated differently.
 \subsection*{$k$-tupels as a measure of similarity}
-In the work of Song \textit{et al.}\cite{doi:10.1093/bib/bbt067} different methods based on $k$-tupel occurrences in sequences are presented. Where a $k$-tupel is a substring of sequences with length $k$.\\
+In the work of Song \textit{et al.}\cite{doi:10.1093/bib/bbt067} different methods based on $k$-tupel occurrences in sequences are presented. A $k$-tupel is a substring of sequences with length $k$.\\
 By counting the occurrences of these $k$-tupels and applying a distance or dissimilarity metric, the tupels are clustered and these clusters analyzed using current biological knowledge. A metric would be based on the resulting counted $k$-tupel frequencies.\\
 The next section will focus on methods of $k$-tupel counts as a measure of similarity for sequences.
 \paragraph*{The $D_2$ statistic and normalization by $D2z$}
@@ -283,7 +283,7 @@ where $X_w$ and $Y_w$ are the number of occurrences of string $w$ in the corresp
 Kantrovitz \textit{et al.}\cite{kantorovitz2007statistical} stated that the $D_2$ statistic depends on the  underlying sequence model and performed a normalization to remove the bias. The resulting statistic is called $D2z$ and is defined as
 $$D2z(A,B)=\frac{D_2(A,B)-E(D_2)}{\sqrt{Var(D_2)}}$$
 The expected value and variance are calculated by Markov models for the used sequences.\\
-$D2z$ was compared to five other measures of similarity -- see \cite{doi:10.1093/bib/bbt067,kantorovitz2007statistical} for details -- through analysis of $cis$-regulatory modules (CRM), outperforming all of them. However $D2z$ requires two parameters; apart from $k$, $r$ has to be specified, where $r$ is the order of the sequence Markov chain.
+$D2z$ was compared to five other measures of similarity -- \cite{doi:10.1093/bib/bbt067,kantorovitz2007statistical} -- through analysis of $cis$-regulatory modules (CRM), outperforming all of them. However $D2z$ requires two parameters; apart from $k$, $r$ has to be specified, where $r$ is the order of the sequence Markov chain.
 \paragraph*{Phylogenetic trees through statistics -- CVTree}
 Another approach utilizes the expected count of a $k$-tupel under the $(k-2)$-th order Markov chain, estimated by 
 $$E_w^X=\frac{X_wX_{w_2\dots w_k}}{X_{w_2\dots w_{k-1}}}$$
@@ -292,10 +292,10 @@ The correlation coefficient of the relative difference vectors with the expected
 $$Hao=\frac{1}{2}\left(1-\frac{\sum_w\left(\frac{X_w-E_w^X}{E_w^X}\right)\left(\frac{Y_w-E_w^Y}{E_w^Y}\right)}{\sqrt{\sum_w\left(\frac{X_w-E_w^X}{E_w^X}\right)^2\sum_w\left(\frac{Y_w-E_w^Y}{E_w^Y}\right)^2}}\right)$$
 Notation is taken from Song \textit{et al.}\cite{doi:10.1093/bib/bbt067}.\\
 \\
-$Hao$ calculates the frequencies of appearances of overlapping $k$-tupels indicated with $X_w$ and subtracts a random background using the $(k-2)$-th order Markov chain; this is to minimize the influence of random mutation. After computation of correlation -- $C$ -- a normalization was defined by subtraction from 1 and multiplication with $\frac{1}{2} $.
+$Hao$ calculates the frequencies of appearances of overlapping $k$-tupels indicated with $X_w$ and subtracts a random background using the $(k-2)$-th order Markov chain; this is to minimize the influence of random mutation. After computation of correlation $C$ a normalization was defined by subtraction from 1 and multiplication with $\frac{1}{2} $.
 $$C=\frac{\sum_w\left(\frac{X_w-E_w^X}{E_w^X}\right)\left(\frac{Y_w-E_w^Y}{E_w^Y}\right)}{\sqrt{\sum_w\left(\frac{X_w-E_w^X}{E_w^X}\right)^2\sum_w\left(\frac{Y_w-E_w^Y}{E_w^Y}\right)^2}}$$
 $C$ describes the cosine of the angle between the sequences, where $C=1$ $\Leftrightarrow A=B$ and $C=0$ $\Leftrightarrow \forall a_i \in A,$ $b_i \in B:$ $a_i \neq b_i$. \\
-For CVTree a distance matrix is computed by applying $Hao$ on each pair of sequences, neighbor joining then constructs a phylogenetic tree to visualize similarity.\\
+For CVTree a distance matrix is computed by applying $Hao$ to each pair of sequences, neighbor joining then constructs a phylogenetic tree to visualize similarity.\\
 CVTree was tested by Qi \textit{et al.} on a set of 139 prokaryotic genomes computing a robust result\cite{qi2004cvtree}. \\
 The application of CVTree on virus data provided on the web service is seen in Figure \ref{img:cvtree}.
 \begin{figure*}
@@ -364,15 +364,15 @@ Additional testing using metagenomes and NGS data was carried out\cite{doi:10.10
 $d_2^S$ outperformed the other tested measures in terms of consistency and separation as was seen through the tree samples and human feces metagenome respectively. \\
 Overall $d_2^S$ produced the best results compared to all mentioned statistics with $Hao$ and $d_2^*$ having similar outcomes.
 \subsection*{Machine learning for alignment-free data analysis}
-In his work van der Maaten\cite{DBLP:journals/corr/abs-1301-3342} introduced a machine learning variant -- BH-SNE --  based upon the idea that closely related objects have a larger influence upon each other than unrelated ones. While these objects were originally intended to be points in a picture, Laczny \textit{et al.}\cite{Laczny2014} used reads of metagenomes.\\
+In his work van der Maaten \cite{DBLP:journals/corr/abs-1301-3342} introduced a machine learning variant -- BH-SNE --  based on the idea that closely related objects have a larger influence upon each other than unrelated ones. While these objects were originally intended to be points in a picture, Laczny \textit{et al.}\cite{Laczny2014} used reads of metagenomes.\\
 Barnes-Hut-SNE applies the Barnes-Hut algorithm and metric trees to modify the t-SNE method, commonly used in machine learning
 \paragraph*{Barnes-Hut and vantage-point trees for faster computation}
-The Barnes-Hut algorithm is often used by astronomers to perform $N$-body simulations\cite{DBLP:journals/corr/abs-1301-3342}. In this algorithm it is assumed that the force of objects with sufficient distance to one another is infinitesimal and thus can be ignored in further computation. Leading --in the case of BH-SNE -- to a cut in objects to include in calculations.\\
-For choosing these objects van der Maaten used vantage-point trees, where similar nodes are saved as the left, dissimilar nodes as the right child. After establishing the data structure one can search the tree and apply the given algorithm to the reduced set of nodes of interest\\
+The Barnes-Hut algorithm is often used by astronomers to perform $N$-body simulations\cite{DBLP:journals/corr/abs-1301-3342}. In this algorithm it is assumed that the force of objects with sufficient distance to each another is infinitesimal and thus can be ignored in further computation. Leading --in the case of BH-SNE -- to a cut in objects to include in calculations.\\
+Van der Maaten chose these objects based on vantage-point trees, where similar nodes are saved as the left, dissimilar nodes as the right child. After establishing the data structure one can search the tree and apply the given algorithm to the reduced set of nodes of interest\\
 \paragraph*{Sequence signatures as objects}
-Observations suggest the existence of species-specific oligonucleotide signatures in genomic sequences\cite{Laczny2014,Cheng1194}. These consist of $k$-mers and can be represented as vectors in high-dimensional Euclidean space; for human interpretation these vectors need to be transformed in a two or three dimensional space\cite{Laczny2014}.\\
-For construction of these vectors a joint probability is assigned to the $k$-mers and a similarity function to the corresponding points in high-dimensional space. Utilizing a Kullback-Leibler divergence and the optimizations stated before the points can be optimized and learned.\\
-Using center log-ratio (CLR)-transformed -- a normalization step -- oligonucleotide signatures and the BH-SNE approach of van der Maaten, Laczny \textit{et al.} constructed a tool for application on metagenomic-data with sequence length of 1000 nt and 5-mers as oligonucleotide signatures. While these parameters produced the best results Laczny\textit{et al.} stated that 600 nt might be an appropriate length for some applications, but with lower values the separation would drop remarkably, as seen in (Figure  \ref{img:seperation}) through lesser separation of the clusters. Implementing their approach using 5-mers produced better congruency compared to transformed and untransformed 4-mers.\\
+Observations suggest the existence of species-specific oligonucleotide signatures in genomic sequences\cite{Laczny2014,Cheng1194}. These consist of $k$-mers and can be represented as vectors in high-dimensional Euclidean space. For human interpretation these vectors need to be transformed in a two or three dimensional space \cite{Laczny2014}.\\
+vector construction is achieved through assignment of joint probabilities to the $k$-mers and a similarity function to the corresponding points in high-dimensional space. Utilizing a Kullback-Leibler divergence and the optimizations stated before the points can be optimized and learned.\\
+Using center log-ratio (CLR)-transformed -- a normalization step -- oligonucleotide signatures and the BH-SNE approach of van der Maaten, Laczny \textit{et al.} constructed a tool for application on metagenomic-data with sequence length of 1000 nt and 5-mers as oligonucleotide signatures. While these parameters produced the best results Laczny\textit{et al.} stated that 600 nt might be an appropriate length for some applications, but with lower values the separation would drop remarkably, as can be seen in Figure  \ref{img:seperation} through lesser separation of the clusters. Implementing their approach using 5-mers produced better congruency compared to transformed and untransformed 4-mers.\\
 For Laczny \textit{et al.} these 5-mers are the before mentioned objects, used for calculation of similarity in BH-SNE.
 \begin{figure}
 	\centering
@@ -386,7 +386,7 @@ For Laczny \textit{et al.} these 5-mers are the before mentioned objects, used f
 \paragraph*{Cluster finding}
 The tool was tested on several simulated data sets; EqualSet01,EqualSet02 and LogSet01. The genomes of organisms in these sets were equally and logarithmically distributed; among the equally distributed sets were genomes with small and high similarity respectively. \\
 The equally distributed data was used for reasons of simplicity, in real-world metagenomes, DNA is never evenly distributed, the logarithmic set should simulate this real-world data with varying quantities of different genomes. High and low similarity sets test the discrimination capabilities of the tool.\\
-After applying their tool on the simulated metagenomes their results showed distinct clustering for different species as seen in Figure \ref{img:clusterData1} for EqualSet01 and LogSet01 respectively. Clustering of EqualSet02 resulted in overlapping of closely related organisms and separation of more distant relatives. \\
+After applying their tool on the simulated metagenomes their results showed distinct clustering for different species as depicted in Figure \ref{img:clusterData1} for EqualSet01 and LogSet01, respectively. Clustering of EqualSet02 resulted in overlapping of closely related organisms and separation of more distant relatives. \\
 Overall the runs on simulated data resulted in high sensitivity, specificity and accuracy. A selection of values is outlined in Table \ref{tab:sens-spec-acc1}. The calculation was performed by enclosing clusters with polygons as seen in Figure \ref{img:clusterData1}. Points inside represent the positives, points outside the negatives. Similar outputs were achieved by fitting (semi-)automated Gaussian Mixture models to calculate these values.
 \begin{figure}[h!]
 	\centering

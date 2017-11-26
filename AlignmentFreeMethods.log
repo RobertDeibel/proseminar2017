@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  26 NOV 2017 18:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  26 NOV 2017 20:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -762,11 +762,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 361--366
  []
 
 [4 <./bilder/CVTree.png>]
-Underfull \hbox (badness 963) in paragraph at lines 370--372
-\OT1/cmr/m/n/10 For choos-ing these ob-jects van der Maaten used
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 370--372
 
  []
@@ -793,11 +788,6 @@ Overfull \hbox (7.799pt too wide) in paragraph at lines 393--394
 
 Overfull \hbox (3.2227pt too wide) in paragraph at lines 387--410
 \OT1/cmr/m/n/10 After ap-ply-ing their tool on the sim-u-lated metagenomes
- []
-
-
-Underfull \hbox (badness 1033) in paragraph at lines 387--410
-\OT1/cmr/m/n/10 their re-sults showed dis-tinct clus-ter-ing for dif-fer-
  []
 
 [5 <./bilder/seperation.png>]
@@ -878,7 +868,7 @@ Here is how much of TeX's memory you used:
  11026 multiletter control sequences out of 15000+600000
  10938 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,9n,37p,744b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,9n,37p,749b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/p
@@ -897,7 +887,7 @@ sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmtt8.pfb>
-Output written on AlignmentFreeMethods.pdf (8 pages, 2174302 bytes).
+Output written on AlignmentFreeMethods.pdf (8 pages, 2174292 bytes).
 PDF statistics:
  285 PDF objects out of 1000 (max. 8388607)
  240 compressed objects within 3 object streams
