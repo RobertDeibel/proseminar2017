@@ -1,6 +1,11 @@
 \beamer@sectionintoc {1}{Metagenomics}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Metagenomes}{3}{0}{1}
-\beamer@subsectionintoc {1}{2}{NGS and Alignment}{4}{0}{1}
-\beamer@sectionintoc {2}{Alignment-based approach}{6}{0}{2}
-\beamer@sectionintoc {3}{Alignment-free methods}{8}{0}{3}
-\beamer@sectionintoc {4}{Second Section}{11}{0}{4}
+\beamer@subsectionintoc {1}{1}{Metagenome}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{NGS and alignment}{3}{0}{1}
+\beamer@sectionintoc {2}{Alignment-based approach}{5}{0}{2}
+\beamer@sectionintoc {3}{Alignment-free methods}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{Statistics as similarity measurement}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{CVTree}{20}{0}{3}
+\beamer@subsectionintoc {3}{3}{$D_2^S$, $D_2^*$ and their normalization}{26}{0}{3}
+\beamer@subsectionintoc {3}{4}{Consideration of mismatches}{30}{0}{3}
+\beamer@subsectionintoc {3}{5}{Consideration of mismatches}{31}{0}{3}
+\beamer@subsectionintoc {3}{6}{Machine learning -- BH-SNE}{34}{0}{3}

@@ -113,25 +113,24 @@ Eberhard-Karls Universität Tübingen \\ % Your institution for the title page
 \section{Metagenomics} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
 %------------------------------------------------
 
-\subsection{Metagenomes}
 \begin{frame}
 \frametitle{Metagenomics}
+\subsection{Metagenome}
+\begin{block}{Metagenome}
                             \begin{itemize}
                	\item  A metagenome is the whole set of transcripts found in a sample.
                         \item Metagenomics is the study of those
                         \item $>90\%$ uncultureable microorganisms
                         \item design of antibiotics, analysis of microorganismal life    
                         \end{itemize}
-\end{frame}
-
-%------------------------------------------------
-\subsection{NGS and Alignment}
-\begin{frame}
-\frametitle{NGS and Alignment}
+\end{block}
+\subsection{NGS and alignment}
+\begin{block}{NGS and alignment}
 \begin{itemize}
 \item Advances in sequencing made metagenomics possible
 \item NGS generates comparable reads
 \end{itemize}
+\end{block}
 \end{frame}
 
 %------------------------------------------------
@@ -170,95 +169,181 @@ Eberhard-Karls Universität Tübingen \\ % Your institution for the title page
 %-----------------------------------------------
 \section{Alignment-free methods}
 \begin{frame}
-	
-\end{frame}
-\begin{frame}
-\frametitle{Blocks of Highlighted Text}
-\begin{block}{Block 1}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+\frametitle{Different approaches}
+	\begin{block}{Statistics}
+		\begin{itemize}
+			\item Utilizes statistics differing in power
+			\item based on $k$-tuple counts
+			\item Have to be applied through (dis)similarity matrix
+			\item Further analysis follows
+		\end{itemize}
+	\end{block}
+\begin{block}{Machine learning}	
+	\begin{itemize}
+		\item Optimization of a function
+		\item based on $k$-mer signature
+		\item applies BH-SNE
+		\item Visualizes data in scatter plots
+	\end{itemize}
 \end{block}
+\end{frame}
 
-\begin{block}{Block 2}
-Pellentesque sed tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum quis magna at risus dictum tempor eu vitae velit.
+%------------------------------------------------
+\subsection{Statistics as similarity measurement}
+\begin{frame}
+	\frametitle{Measuring similarity}
+	$$D_2=\sum_{w\in \mathcal{A}^k}X_wY_w$$
+	where:
+	\begin{itemize}
+		\item $X_w$, $Y_w$ number of occurrences in $A$, $B$
+		\item $\mathcal{A}$ alphabet
+		\item $k$ is length of $w$
+	\end{itemize}
+\uncover<2>{\begin{block}{Problem}
+		$D_2$ is not normalized $\Rightarrow$ results vary on different factors
+\end{block}}
+\end{frame}
+
+%-----------------------------------------------
+
+\begin{frame}
+	\frametitle{Measuring similarity}
+		Assume sequences are generated through Markov chain\\
+		\uncover<2,3,4,5>{$$D2z(A,B)=\frac{D_2(A,B)-E(D_2)}{\sqrt{Var(D_2)}}$$}%
+		\begin{itemize}
+		\uncover<3,4,5>{\item compared to five other measures $D2z$ outperformed them}\\
+		\uncover<4,5>{\item needs two parameters, $k$ and $r$}
+		\uncover<5>{\item $E(D_2)$ and $Var(D_2)$ calculated with Markov chain in mind}
+	\end{itemize}
+\end{frame}
+
+%-----------------------------------------------
+
+\begin{frame}
+	\frametitle{Calculating the expected value}
+	\begin{block}{MC of order zero}
+		Probability of $A=B$ or\dots\\
+		\uncover<2,3,4,5>{Sum of background probabilities $f_a^A$, $f_a^B$ to the power of $k$}
+		\uncover<3,4,5>{$$E(D_2)=\left(\sum_{a\in \mathcal{A}}f_a^Af_a^B\right)^k$$}
+	\end{block}
+\uncover<4,5>{\begin{block}{MC of order 1}
+	Sum of probabilities for $|w|=k$, under consideration of MC\\
+	\uncover<5>{$$\sum_{|w|=k}p^A(w_1)p^A(w|w_1)p^B(w_1)p^B(w|w_1)$$}
+\end{block}}
+\end{frame}
+
+
+%------------------------------------------------
+
+\subsection{CVTree}
+\begin{frame}
+\frametitle{Constructing phylogenetic trees -- CVTree}
+	\begin{itemize}
+		\item considers (k-2)-th order MC estimated by $E^X_w$
+		\uncover<2,3,4>{$$Hao=\frac{1}{2}(1-C)$$}
+		\uncover<3,4>{$$C=\frac{\sum_w\left(\frac{X_w-E_w^X}{E_w^X}\right)\left(\frac{Y_w-E_w^Y}{E_w^Y}\right)}{\sqrt{\sum_w\left(\frac{X_w-E_w^X}{E_w^X}\right)^2\sum_w\left(\frac{Y_w-E_w^Y}{E_w^Y}\right)^2}}$$}
+		\uncover<4>{\item Observations in composition vector
+		\item subtraction of background "noise" through MC
+		\item $C$ is cosine between vectors}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\begin{figure}
+		\includegraphics[width=\linewidth]{bilder/CVTree.png}
+	\caption{Computed phylogenetic tree through application of neighbor joining dissimilarity matrix}
+\end{figure}
+\end{frame}
+%--------------------------------------------------
+
+\begin{frame}
+	\frametitle{Nucleotide frequency}
+	\begin{itemize}
+		\item Related approach to $Hao$
+		\item Consider di-nucleotide frequency
+		$$\rho_{ab}(A)=\frac{f_{ab}}{f_af_b}$$
+		\item Can be extended to tri- and tetra nucleotides
+		\item $l_p$ norm as dissimilarity measure
+		$$\delta(A,B)=\sum_{ab\in A}|\rho_{ab}(A)-\rho_{ab}(B)|$$
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\subsection{$D_2^S$, $D_2^*$ and their normalization}
+\begin{frame}
+	\frametitle{$D_2^S$, $D_2^*$ and their normalization}
+	\begin{itemize}
+		\item For two normal random variables $XY/\sqrt{X^2+Y^2}$ is also normally distributed
+		\uncover<2,3,4>{$$D_2^S=\sum_{w\in \mathcal{A}^k}\frac{\widetilde{X}_w\widetilde{Y}_w}{\sqrt{\widetilde{X}_w^2+\widetilde{Y}_w^2}}$$}%
+		\uncover<3,4>{\item$D_2^*$ utilizes that number of occurrences is approximately Poisson; mean and variance are the same}
+		\uncover<4>{\begin{block}{Conclusions}
+				\begin{enumerate}
+					\item $D_2^S$ and $D_2^*$ have higher power than $D_2$
+					\item $D_2^*$ has highest power when $k$ equals $motif$ length
+					\item $D_2^*$ has higher power for short sequences\\
+			
+				\end{enumerate}
+				but again both not normalized
+	\end{block}}
+		
+	\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+\begin{frame}
+\frametitle{Normalization and Neighborhood}
+\begin{block}{Normalization}
+	\begin{itemize}
+		\item Normalization to $d_2^S$ and $d_2^*$
+		\item 0 when sequences are the same and close to one if anti-correlated
+		\item Now applicable to metagenomic data or varying types of sequences
+	\end{itemize}
 \end{block}
-
-\begin{block}{Block 3}
-Suspendisse tincidunt sagittis gravida. Curabitur condimentum, enim sed venenatis rutrum, ipsum neque consectetur orci, sed blandit justo nisi ac lacus.
-\end{block}
+%-----------------------------------------------
+\subsection{Consideration of mismatches}
+\uncover<2>{\begin{block}{Consideration of mismatches}
+	\begin{itemize}
+		\item instead of $w$ the statistics should consider the neighborhood $\varsigma(w)$
+		\item If $w' \in \varsigma(w)$ $w'$ has a certain number of mismatches with $w$
+		\item Reverse complement can be included similarly
+		\item statistics can then be modified
+	\end{itemize}
+\end{block}}
 \end{frame}
 
-%------------------------------------------------
+%-----------------------------------
 
 \begin{frame}
-\frametitle{Multiple Columns}
-\begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\column{.45\textwidth} % Left column and width
-\textbf{Heading}
-\begin{enumerate}
-\item Statement
-\item Explanation
-\item Example
-\end{enumerate}
-
-\column{.5\textwidth} % Right column and width
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
-
-\end{columns}
+	\frametitle{Performance under the mismatch model}
+	\begin{block}{Test parameters}
+		\begin{itemize}
+			\item sequences from mouse embryo
+			\item positive and negative set maximum of 30\% repetitions
+			\item Dissimilarity was calculated
+			\item Threshold was applied
+			\item  prediction of dissimilarity lower than threshold resulted in positives
+			\item Predictions were compared to real data
+			\item Testing with different parameters for $k$, $r$ and mismatch weight
+		\end{itemize}
+	\end{block}
+\uncover<2>{\begin{block}{Test conclusions}
+	\begin{itemize}
+		\item $Hao$ performed worse than $d_2^S$ and $d_2^*$
+		\item $d_2^S$ and $d_2^*$ performed best with mismatch weight of 0.05 and $k=4$
+		\item Overall $d_2^S$ achieved best results in testing 
+	\end{itemize}
+\end{block}}
 \end{frame}
 
-%------------------------------------------------
-\section{Second Section}
-%------------------------------------------------
+\subsection{Machine learning -- BH-SNE}
 
 \begin{frame}
-\frametitle{Table}
-\begin{table}
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}[fragile] % Need to use the fragile option when verbatim is used in the slide
-\frametitle{Verbatim}
-\begin{example}[Theorem Slide Code]
-\begin{verbatim}
-\begin{frame}
-\frametitle{Theorem}
-\begin{theorem}[Mass--energy equivalence]
-$E = mc^2$
-\end{theorem}
-\end{frame}\end{verbatim}
-\end{example}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Figure}
-Uncomment the code on this slide to include your own image from the same directory as the template .TeX file.
-%\begin{figure}
-%\includegraphics[width=0.8\linewidth]{test}
-%\end{figure}
+	\frametitle{Machine learning -- BH-SNE}
+	\begin{itemize}
+		\item Applies Barnes-hut and vantage point trees
+		\item Utilizes species-specific oligonucleotide signatures as $k$-mers
+		\item $k$-mers are represented as vectors in high-dimensional Euclidean space
+		\item Transformation enables human interpretation in scatter plots
+	\end{itemize}
 \end{frame}
 
 %------------------------------------------------
