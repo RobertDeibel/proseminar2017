@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  26 NOV 2017 20:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.11.17)  27 NOV 2017 14:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -702,132 +702,138 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <24> not available
 
 \address@aff1=\toks28
 
-LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 179.
+Underfull \hbox (badness 10000) in paragraph at lines 239--243
 
-
-
-Overfull \hbox (4.43141pt too wide) in paragraph at lines 250--253
- []\OT1/cmr/m/it/10 NGS -- Next Gen-er-a-tion Se-quenc-ing \OT1/cmr/m/n/10 The 
-sheer amount
  []
 
-<bilder/growth_of_novel_gene_discovery.jpg, id=11, 495.62766pt x 355.71294pt>
-File: bilder/growth_of_novel_gene_discovery.jpg Graphic file (type jpg)
-<use bilder/growth_of_novel_gene_discovery.jpg>
-Package pdftex.def Info: bilder/growth_of_novel_gene_discovery.jpg  used on inp
-ut line 258. on input line 258.
-Package pdftex.def Info: Requested size: 211.49857pt x 151.79204pt on input lin
-e 258.
+
+Underfull \hbox (badness 808) in paragraph at lines 253--256
+ []\OT1/cmr/m/it/10 NGS -- Next Gen-er-a-tion Se-quenc-ing \OT1/cmr/m/n/10 Ad-v
+ances in
+ []
+
+
+Overfull \hbox (25.00867pt too wide) in paragraph at lines 257--265
+ []\OT1/cmr/m/it/10 Goals \OT1/cmr/m/n/10 Metagenomics-data, an-a-lyzed through
+ an alignment-
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 267--272
+\OT1/cmr/m/n/10 nomics. This data stays un-an-a-lyzed fol-low-ing an
+ []
+
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 259.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 272.
 
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 292--296
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
 
  []
 
-[2 <./bilder/growth_of_novel_gene_discovery.jpg>]
-<bilder/CVTree.png, id=74, 1890.06125pt x 852.18375pt>
+
+Overfull \hbox (2.30598pt too wide) in paragraph at lines 290--293
+\OT1/cmr/m/n/10 The ex-pected value and vari-ance are cal-cu-lated through
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--293
+
+ []
+
+[2]
+<bilder/CVTree.png, id=65, 1890.06125pt x 852.18375pt>
 File: bilder/CVTree.png Graphic file (type png)
 <use bilder/CVTree.png>
-Package pdftex.def Info: bilder/CVTree.png  used on input line 303. on input li
-ne 303.
+Package pdftex.def Info: bilder/CVTree.png  used on input line 317. on input li
+ne 317.
 Package pdftex.def Info: Requested size: 479.16266pt x 216.03616pt on input lin
-e 303.
+e 317.
 
-Overfull \hbox (7.66266pt too wide) in paragraph at lines 303--304
+Overfull \hbox (7.66266pt too wide) in paragraph at lines 317--318
  [][] 
  []
 
 
-Overfull \hbox (8.26036pt too wide) in paragraph at lines 338--341
+Overfull \hbox (8.26036pt too wide) in paragraph at lines 352--355
 \OT1/cmr/m/n/10 where $\OML/cmm/m/it/10 motifs$ \OT1/cmr/m/n/10 are sig-nif-i-c
 antly en-riched word patterns[[]]. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--341
+Underfull \hbox (badness 10000) in paragraph at lines 352--355
 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 361--366
+[3] [4 <./bilder/CVTree.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 375--380
 
  []
 
-[4 <./bilder/CVTree.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 370--372
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--386
 
  []
 
-<bilder/seperation.png, id=126, 366.36874pt x 713.66624pt>
+<bilder/seperation.png, id=115, 366.36874pt x 713.66624pt>
 File: bilder/seperation.png Graphic file (type png)
 <use bilder/seperation.png>
-Package pdftex.def Info: bilder/seperation.png  used on input line 379. on inpu
-t line 379.
+Package pdftex.def Info: bilder/seperation.png  used on input line 393. on inpu
+t line 393.
 Package pdftex.def Info: Requested size: 141.00143pt x 274.65889pt on input lin
-e 379.
-<bilder/clusterData1.jpg, id=131, 929.4725pt x 1010.77625pt>
+e 393.
+<bilder/clusterData1.jpg, id=124, 929.4725pt x 1010.77625pt>
 File: bilder/clusterData1.jpg Graphic file (type jpg)
 <use bilder/clusterData1.jpg>
-Package pdftex.def Info: bilder/clusterData1.jpg  used on input line 393. on in
-put line 393.
+Package pdftex.def Info: bilder/clusterData1.jpg  used on input line 446. on in
+put line 446.
 Package pdftex.def Info: Requested size: 230.299pt x 250.44165pt on input line 
-393.
+446.
 
-Overfull \hbox (7.799pt too wide) in paragraph at lines 393--394
+Overfull \hbox (7.799pt too wide) in paragraph at lines 446--447
  [][] 
  []
 
 
-Overfull \hbox (3.2227pt too wide) in paragraph at lines 387--410
+Overfull \hbox (3.2227pt too wide) in paragraph at lines 441--463
 \OT1/cmr/m/n/10 After ap-ply-ing their tool on the sim-u-lated metagenomes
  []
 
-[5 <./bilder/seperation.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<bilder/humangutCluster.jpg, id=154, 929.4725pt x 989.6975pt>
+<bilder/humangutCluster.jpg, id=133, 929.4725pt x 989.6975pt>
 File: bilder/humangutCluster.jpg Graphic file (type jpg)
 <use bilder/humangutCluster.jpg>
-Package pdftex.def Info: bilder/humangutCluster.jpg  used on input line 416. on
- input line 416.
+Package pdftex.def Info: bilder/humangutCluster.jpg  used on input line 469. on
+ input line 469.
 Package pdftex.def Info: Requested size: 211.49857pt x 225.19429pt on input lin
-e 416.
-<bilder/groudwaterCluster.png, id=156, 516.93124pt x 530.98375pt>
+e 469.
+<bilder/groudwaterCluster.png, id=135, 516.93124pt x 530.98375pt>
 File: bilder/groudwaterCluster.png Graphic file (type png)
 <use bilder/groudwaterCluster.png>
-Package pdftex.def Info: bilder/groudwaterCluster.png  used on input line 421. 
-on input line 421.
+Package pdftex.def Info: bilder/groudwaterCluster.png  used on input line 474. 
+on input line 474.
 Package pdftex.def Info: Requested size: 211.49857pt x 217.25102pt on input lin
-e 421.
-<bilder/marineCluster.png, id=158, 384.43625pt x 378.41376pt>
+e 474.
+<bilder/marineCluster.png, id=137, 384.43625pt x 378.41376pt>
 File: bilder/marineCluster.png Graphic file (type png)
 <use bilder/marineCluster.png>
-Package pdftex.def Info: bilder/marineCluster.png  used on input line 427. on i
-nput line 427.
+Package pdftex.def Info: bilder/marineCluster.png  used on input line 480. on i
+nput line 480.
 Package pdftex.def Info: Requested size: 211.49857pt x 208.19171pt on input lin
-e 427.
+e 480.
+[5] [6 <./bilder/seperation.png> <./bilder/clusterData1.jpg>]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+[7 <./bilder/humangutCluster.jpg> <./bilder/groudwaterCluster.png>]
 (./AlignmentFreeMethods.bbl
-Underfull \vbox (badness 2538) has occurred while \output is active []
-
- [6 <./bilder/clusterData1.jpg> <./bilder/humangutCluster.jpg>]
-Overfull \vbox (3.84474pt too high) has occurred while \output is active []
-
-
 Overfull \hbox (2.37505pt too wide) in paragraph at lines 90--101
 [][]\OT1/cmss/m/n/7 http://www.worldscientific.com/doi/pdf/10.1142/978981429529
 1[]0003[][] 
@@ -841,17 +847,16 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <7> not available
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./bilder/groudwaterCluster.png> <./bilder/marineCluster.png>])
-
+ [8 <./bilder/marineCluster.png>]) 
 AED: lastpage setting LastPage
-[8
+[9
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 523.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 523.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 580.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 580.
  (./AlignmentFreeMethods.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 523.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 523.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 580.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 580.
 Package rerunfilecheck Info: File `AlignmentFreeMethods.out' has not changed.
 (rerunfilecheck)             Checksum: ED3CDF9133C37D676C26CC0D4896F289;44.
 
@@ -859,16 +864,16 @@ Package rerunfilecheck Info: File `AlignmentFreeMethods.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 523.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 580.
  ) 
 Here is how much of TeX's memory you used:
- 7623 strings out of 492985
- 105441 string characters out of 6138637
- 220271 words of memory out of 5000000
- 11026 multiletter control sequences out of 15000+600000
- 10938 words of font info for 39 fonts, out of 8000000 for 9000
+ 7619 strings out of 492985
+ 105218 string characters out of 6138637
+ 225959 words of memory out of 5000000
+ 11021 multiletter control sequences out of 15000+600000
+ 10582 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,9n,37p,749b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,9n,37p,740b,543s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/p
@@ -881,16 +886,15 @@ s/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb>
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/share/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmtt8.pfb>
-Output written on AlignmentFreeMethods.pdf (8 pages, 2174292 bytes).
+/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmtt8.pfb>
+Output written on AlignmentFreeMethods.pdf (9 pages, 1596389 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
- 67 named destinations out of 1000 (max. 500000)
- 44 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 290 PDF objects out of 1000 (max. 8388607)
+ 246 compressed objects within 3 object streams
+ 70 named destinations out of 1000 (max. 500000)
+ 39 words of extra memory for PDF output out of 10000 (max. 10000000)
 
