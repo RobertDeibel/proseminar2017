@@ -176,7 +176,7 @@
 	Metagenomics is the analysis of microorganisms of biotopes, like the human gut. 
 	The high amount of reads obtained through NGS-methods as well as findings of unsequenced genomes in metagenominc data requires usage of lightweight tools independent of databases and alignment.
 	In this report I introduce the two main branches of analysis tools, while setting the focus on alignment-free methods.\\
-	While the alignment-based approaches align a target sequence against a database  -- as seen with Smith-Waterman or BLAST -- alignment-free methods have different approaches. Here I will showcase a selection of statistical and machine learning approaches and test selected methods on metagenomic data.\\ 
+	While the alignment-based approaches align a target sequence against a database  -- as seen with Smith-Waterman or BLAST -- alignment-free methods have different approaches. Here I will showcase a selection of statistical and machine learning approaches.\\ 
 	$D2z$, $Hao$ and $d_2^*$ are statistical approaches based on $k$-tupel count frequencies, similarity is measured by applying a metric and through interpretation with current biological knowledge.\\
 	Usage of $k$-mers as vectors in high-dimensional space and BH-SNE visualizing related data in two dimensional scatter plots leads to an approach with high accuracy for simulated and real-world metagenomes alike.
 	Especially for analysis of novel data, sampled from microbioms, alignment-free applications of metagenomics are essential for understanding the cooperation of microorganisms and for further research in immunology.
@@ -238,7 +238,7 @@
 \paragraph*{A puddle of mud}
 The metagenome is the whole set of transcripts of a population of microorganisms in a microbiome sample. Metagenomics is the study and analysis of these metagenomes \cite{handelsman2004metagenomics}.\\
 A microbiome consists of countless bacteria, archea and viruses; out of which $>$90\% are uncultureable, using sequencing and metagenomic analysis as a way to study these.\\
-Metagenomics is used in the design of antibiotics and medicine or to analyze the metabolism of microorganisms, making it a rapidly developing field of research.\\
+Metagenomics is used in the design of antibiotics and medicine or to analyze the metabolism of microorganisms, making it a rapidly developing field of research.
 %\paragraph*{Accumulated data from microbiome samples}
 
 %Choosing a sample is the easiest part of the analysis of a microbiome; the following steps are:\\
@@ -254,8 +254,8 @@ Advances in sequencing made metagenomics as a field possible.
 Nowadays new high throughput methods, also Next Generation Sequencing or NGS for short, are used to generate comparable data from real-world samples. NGS is a term for methods of rapid parallelized sequencing, producing thousands or millions of reads concurrently.\\
  Data analysis can the be carried out on these reads.
 \paragraph*{Goals}
-Metagenomics-data, analyzed through an alignment-free method, allows insight into the ways of a broad spectrum of  microorganismal life. Differing from the classical approach of alignment, where newly found sequences are often unanalyzed, these alignment-free methods could provide first evidence of origin and function on novel sequences.\\
-In this report, I want to state two branches of metagenomic analysis, while focusing on alignment-free methods. State different approaches, the strengths and drawbacks.
+Metagenomics-data, analyzed through align\-ment-free methods, allows insight into the ways of a broad spectrum of  microorganismal life. Differing from the classical approach of alignment, where newly found sequences are often unanalyzed, these alignment-free methods could provide first evidence of origin and function on novel sequences.\\
+In this report, I want to state two branches of metagenomic analysis, while focusing on alignment-free methods. State different approaches, the strengths and weaknesses.
 %\begin{figure}
 %	\centering
 %\includegraphics[width=.9\linewidth]{bilder/growth_of_novel_gene_discovery.jpg}	
@@ -279,7 +279,7 @@ Laczny \textit{et al.} utilizes a number of tools to construct a promising appro
 \section*{Methods}
 In this section "power" refers to the statistical term, which is the probability that a test correctly rejects the null hypothesis. With $H_0$: the sequences are unrelated; and $H_1$: the sequences are related under the underlying model. If not stated differently.
 \subsection*{$k$-tuples as a measure of similarity}
-Song \textit{et al.}\cite{doi:10.1093/bib/bbt067} present different methods based on $k$-tuple occurrences in sequences. A $k$-tuple is a substring length $k$.\\
+Song \textit{et al.}\cite{doi:10.1093/bib/bbt067} present different methods based on $k$-tuple occurrences in sequences. A $k$-tuple is a substring of length $k$.\\
 By counting the occurrences of these $k$-tuples and applying a distance or dissimilarity metric, the k-tuples are clustered and these clusters analyzed. Different metrics are stated as statistics, which are a function of two sequences computing the similarity of those.\\
 \paragraph*{The $D_2$ statistic}
 Torney \textit{et al.}\cite{torney1990computation} introduced $D_2$  using shared $k$-tuple  occurrences between sequences to define similarity.
